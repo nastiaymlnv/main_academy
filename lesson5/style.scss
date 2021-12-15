@@ -1,0 +1,72 @@
+$color: #fff;
+%flex-grow-options{
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+@mixin bgcolor($bg){
+    background-color: $bg;
+}
+@mixin border($border){
+    border: 1px solid $border;
+}
+header{
+    display: flex;
+    padding: 10px;
+    @include bgcolor(#6394EB);
+    button {
+        box-sizing: border-box;
+        @include bgcolor(#FE6245);
+        border: none;
+        color: $color;
+        height: 100%;
+        padding: 15px;
+        margin-right: 10px;
+    }
+    & > button{
+        margin-left: auto;
+    }
+}
+article{
+    display: flex;
+    &:not(:first-child){
+        margin-bottom: 10px;
+    }
+    span{
+        box-sizing: border-box;
+        padding: 10px;
+    }
+}
+.event__description{
+    flex-grow: 1;
+    @include bgcolor(#F4F4DA);
+}
+.event__date, .event__price{
+    @extend %flex-grow-options;
+    @include bgcolor(#FDF9EE);
+    @include border(#F3EDE1);
+}
+.job__position{
+    @extend %flex-grow-options;
+    @include bgcolor(#A52B2A);
+    margin: 0 0 15px 15px;
+    color: $color;
+}
+.job__position-about{
+    display: flex;
+    @include bgcolor(#D3691F);
+    padding: 10px;
+    margin: 0 0 15px 15px;
+    color: $color;
+    button{
+        box-sizing: border-box;
+        align-self: flex-end;
+        @include bgcolor(#9F2C2F);
+        @include border(#860F00);
+        border-radius: 10%;
+        padding: 10px;
+        color: $color;
+    }
+}
+.job__info{
+    padding: 0;
+}
