@@ -1,0 +1,22 @@
+html {
+    font-family: Lato, Roboto, sans-serif;
+    background-color: #F2F2F2;
+}
+
+.button {
+    background-color: #1B7DFF;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.link-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.link {
+    color: #006DFE;
+    text-transform: uppercase;
+}

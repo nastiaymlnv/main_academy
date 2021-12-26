@@ -1,4 +1,4 @@
-.content{
+.header-content{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -37,23 +37,70 @@
 
 .nav-list__link {
     color: #fff;
-    font-family: Lato, Roboto, sans-serif;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .header-title{
     color: #fff;
-    font-family: Lato, Roboto, sans-serif;
+    padding-bottom: 372px;
 }
 
 .header-title__title{
     max-width: 620px;
     font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
 }
 
 .header-title__description{
     max-width: 545px;
     font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
     padding: 20px 0 60px 0;
+}
+
+.header-form {
+    display: flex;
+    align-items: center;
+}
+
+.header-form__input {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 2px solid #BFC0C5;
+    color: #fff;
+    padding: 0 40px 22px 40px;
+    margin-right: 60px;
+}
+
+::placeholder{
+    color: #fff;
+    font-weight: 400;
+}
+
+.header-form__input-wrapper{
+    display: inline;
+    position: relative;
+}
+
+.header-form__input-wrapper::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    left: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.header-form__submit-button {
+    padding: 15px 40px;
+    font-size: 24px;
 }
