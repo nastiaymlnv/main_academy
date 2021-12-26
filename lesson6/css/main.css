@@ -50,7 +50,7 @@
 }
 
 .trips {
-    margin-bottom: 130px;
+    margin-bottom: 140px;
 }
 
 .trips__title-wrapper {
@@ -72,25 +72,25 @@
 .trips__view-all {
 }
 
-.trips__places-item-1 {
+.trip-places__item-1 {
     grid-area: fuji;
     background-image: url('../img/trips-mounts.png');
 }
 
-.trips__places-item-2 {
+.trip-places__item-2 {
     grid-area: kyoto;
     background-image: url('../img/trips-kyoto.png');
 }
-.trips__places-item-3 {
+.trip-places__item-3 {
     grid-area: tokyo;
     background-image: url('../img/trips-tokyo.png');
 }
 
-.trips__places-item-4 {
+.trip-places__item-4 {
     grid-area: niigata;
     background-image: url('../img/trips-niigata.png');
 }
-.trips__places-item-5 {
+.trip-places__item-5 {
     grid-area: sapporo;
     background-image: url('../img/trips-sapporo.png');
 }
@@ -101,8 +101,9 @@
     position: relative;
 }
 
-.trips__places {
+.trip-places {
     margin-top: 36px;
+    margin-bottom: 130px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 354px 283px;
@@ -113,7 +114,7 @@
         "tokyo tokyo niigata niigata sapporo sapporo";
 }
 
-.trips__place-name{
+.trip-places__name{
     color: #fff;
     font-size: 50px;
     font-weight: 700;
@@ -121,3 +122,53 @@
     position: absolute;
     bottom: 0;
 }
+
+.more-about-places {
+    display: flex;
+    flex-direction: column;
+    gap: 77px;
+    color: #102746;
+}
+
+.more-about-places__item {
+    display: flex;
+    flex-direction: row;
+    gap: 108px;
+    align-items: center;
+}
+
+.more-about-places__item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.more-about-places__img-wrapper {
+}
+
+.more-about-places__img {
+}
+
+.more-about-places__info {
+    padding: 0 47px 0 0;
+}
+
+.more-about-places__item:nth-child(even) .more-about-places__info{
+    padding: 0 0 0 47px;
+}
+
+.more-about-places__title {
+    width: 370px;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.more-about-places__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 85px 0 58px 0;
+}
+
+.more-about-places__item:nth-child(even) .more-about-places__description{
+    margin-top: 45px;
+}
+
