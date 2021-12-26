@@ -20,3 +20,18 @@ html {
     color: #006DFE;
     text-transform: uppercase;
 }
+
+.section-title{
+    color: #102746;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-title-bottom-line{
+    display: inline-block;
+    height: 0;
+    padding: 0;
+    border: 2px solid #006DFE;
+    width: 253px;
+    margin-bottom: 0;
+}

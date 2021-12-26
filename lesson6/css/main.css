@@ -1,19 +1,16 @@
 .content{
-    max-width: 1262px;
+    max-width: 1266px;
     margin: 0 auto;
-    background-color: #fff;
 }
 
 .benefits{
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
     margin-top: -215px;
     margin-bottom: 124px;
+    background-color: #fff;
 }
 
-.benefits-title{
-    color: #102746;
-    font-size: 35px;
-    font-weight: 700;
+.benefits__title{
     padding: 86px 0 120px 53px;
 }
 
@@ -28,8 +25,13 @@
 
 }
 
-.benefits-categories__img {
+.benefits-categories__img-wrapper {
     padding-bottom: 37px;
+}
+
+.benefits-categories__img {
+    width: 58px;
+    height: 58px;
 }
 
 .benefits-categories__title {
@@ -47,4 +49,75 @@
     line-height: 24px;
 }
 
+.trips {
+    margin-bottom: 130px;
+}
 
+.trips__title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trips__title-name__wrapper{
+}
+
+.trips__title-name {
+}
+
+.trips__link-wrapper {
+}
+
+.trips__view-all {
+}
+
+.trips__places-item-1 {
+    grid-area: fuji;
+    background-image: url('../img/trips-mounts.png');
+}
+
+.trips__places-item-2 {
+    grid-area: kyoto;
+    background-image: url('../img/trips-kyoto.png');
+}
+.trips__places-item-3 {
+    grid-area: tokyo;
+    background-image: url('../img/trips-tokyo.png');
+}
+
+.trips__places-item-4 {
+    grid-area: niigata;
+    background-image: url('../img/trips-niigata.png');
+}
+.trips__places-item-5 {
+    grid-area: sapporo;
+    background-image: url('../img/trips-sapporo.png');
+}
+
+.bg-prop{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.trips__places {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 354px 283px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "fuji fuji fuji kyoto kyoto kyoto"
+        "tokyo tokyo niigata niigata sapporo sapporo";
+}
+
+.trips__place-name{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 30px 30px;
+    position: absolute;
+    bottom: 0;
+}
