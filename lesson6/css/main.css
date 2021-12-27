@@ -21,9 +21,9 @@
     padding: 0 106px 120px 53px;
 }
 
-.benefits-categories__item {
+/* .benefits-categories__item {
 
-}
+} */
 
 .benefits-categories__img-wrapper {
     padding-bottom: 37px;
@@ -60,7 +60,7 @@
     align-items: center;
 }
 
-.trips__title-name__wrapper{
+/* .trips__title-name__wrapper{
 }
 
 .trips__title-name {
@@ -70,7 +70,7 @@
 }
 
 .trips__view-all {
-}
+} */
 
 .trip-places__item-1 {
     grid-area: fuji;
@@ -141,11 +141,11 @@
     flex-direction: row-reverse;
 }
 
-.more-about-places__img-wrapper {
+/* .more-about-places__img-wrapper {
 }
 
 .more-about-places__img {
-}
+} */
 
 .more-about-places__info {
     padding: 0 47px 0 0;
@@ -172,3 +172,99 @@
     margin-top: 45px;
 }
 
+.top-places {
+}
+
+.top-places__title {
+}
+
+.top-places-feed {
+}
+
+.top-places-feed__item {
+}
+
+.top-places-feed__photo--sized{
+    width: 386px;
+    height: 377px;
+    position: relative;
+}
+
+.top-places-feed__caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(21, 24, 36, 0.6);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 25px;
+}
+
+.top-places-feed__photo1 {
+    background-image: url('../img/top-places-nagoya.png');
+}
+
+.top-places-feed__photo2 {
+}
+.top-places-feed__photo3 {
+}
+.top-places-feed__photo4 {
+}
+.top-places-feed__photo5 {
+}
+.top-places-feed__photo6 {
+}
+
+.top-places-feed__country {
+    font-size: 18px;
+}
+
+.top-places-feed__insights {
+    font-size: 16px;
+}
+
+.likes {
+    /* display: inline-block; */
+
+}
+
+.comments {
+    display: inline-block;
+
+}
+
+.likes-wrapper{
+    position: relative;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.likes::after{
+    content: url('../img/like.svg');
+    position: absolute;
+    display: inline;
+    /* right: 50%; */
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+.comments::after{
+    content: url('../img/comment.svg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+.top-places-feed__description {
+    margin: 45px 0 31px 0;
+}
+
+.top-places-feed__more-button {
+    padding: 12px 19px;
+}
