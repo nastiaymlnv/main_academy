@@ -4,7 +4,7 @@ html {
 }
 
 .button {
-    display: inline;
+    display: inline-block;
     background-color: #1B7DFF;
     color: #fff;
     border: none;
