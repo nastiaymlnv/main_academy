@@ -1,0 +1,39 @@
+.footer {
+    background-color: #0E1D28;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 118px 0;
+}
+
+.footer-content{
+    max-width: 1069px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo-wrapper {
+    flex-grow: 1;
+}
+
+.footer__logo {
+    width: 170px;
+    height: 64px;
+}
+
+.footer-map {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+/* .footer-map__list {
+} */
+
+.footer-map__item:first-child {
+    font-size: 18px;
+}
+
+/* .footer-map__item {
+} */

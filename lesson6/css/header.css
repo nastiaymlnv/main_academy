@@ -34,13 +34,12 @@
     justify-content: space-between;
 }
 
-.nav-list__item {
-}
+/* .nav-list__item {
+} */
 
 .nav-list__link {
     color: #fff;
     font-size: 18px;
-    font-weight: 400;
 }
 
 .header-title{
@@ -58,7 +57,6 @@
 .header-title__description{
     max-width: 545px;
     font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
     padding: 20px 0 60px 0;
 }
@@ -73,7 +71,6 @@
     background-color: transparent;
     border: none;
     font-size: 18px;
-    font-weight: 400;
     border-bottom: 2px solid #BFC0C5;
     color: #fff;
     padding: 0 40px 22px 40px;
@@ -82,7 +79,6 @@
 
 ::placeholder{
     color: #fff;
-    font-weight: 400;
 }
 
 .header-form__input-wrapper{

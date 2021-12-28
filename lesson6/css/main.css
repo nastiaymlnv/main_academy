@@ -22,7 +22,6 @@
 }
 
 /* .benefits-categories__item {
-
 } */
 
 .benefits-categories__img-wrapper {
@@ -37,7 +36,7 @@
 .benefits-categories__title {
     font-size: 18px;
     font-weight: 700;
-    color: #000000;
+    color: #000;
 }
 
 .benefits-categories__item:hover .benefits-categories__title {
@@ -71,6 +70,10 @@
 
 .trips__view-all {
 } */
+
+.trip-places__item {
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+}
 
 .trip-places__item-1 {
     grid-area: fuji;
@@ -165,7 +168,7 @@
 .more-about-places__description {
     font-size: 16px;
     line-height: 24px;
-    margin: 85px 0 58px 0;
+    margin: 85px 0 58px;
 }
 
 .more-about-places__item:nth-child(even) .more-about-places__description{
@@ -174,10 +177,11 @@
 
 .top-places {
     max-width: 1280px;
+    margin-bottom: 144px;
 }
 
-.top-places__title {
-}
+/* .top-places__title {
+} */
 
 .top-places-feed {
     display: grid;
@@ -188,8 +192,8 @@
     margin-top: 54px;
 }
 
-.top-places-feed__item {
-}
+/* .top-places-feed__item {
+} */
 
 .top-places-feed__photo--sized{
     width: 386px;
@@ -267,10 +271,18 @@
 } */
 
 .top-places-feed__description {
-    margin: 45px 0 31px 0;
+    margin: 45px 0 31px;
     line-height: 24px;
 }
 
 .top-places-feed__more-button {
     padding: 12px 19px;
+}
+
+/* .video {
+} */
+
+.video__screen {
+    width: 100%;
+    height: 609px;
 }

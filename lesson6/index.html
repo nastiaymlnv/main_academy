@@ -10,23 +10,24 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <header class="header">
         <section class="header-content header-hero">
             <div class="header-hero__logo-wrapper">
-                <img class='header-hero__logo' src="./img/logo.png" alt="odigo logo">
+                <img class='header-hero__logo' src="./img/logo.svg" alt="odigo logo">
             </div>
             <nav class="nav">
                 <ul class='nav-list'>
                     <li class='nav-list__item'>
-                        <a href="#" class='nav-list__link'>Articles</a>
+                        <a href="#articles" class='nav-list__link'>Articles</a>
                     </li>
                     <li class='nav-list__item'>
-                        <a href="#" class='nav-list__link'>Locations</a>
+                        <a href="#locations" class='nav-list__link'>Locations</a>
                     </li>
                     <li class='nav-list__item'>
-                        <a href="#" class='nav-list__link'>Videos</a>
+                        <a href="#videos" class='nav-list__link'>Videos</a>
                     </li>
                     <li class='nav-list__item'>
                         <a href="#" class='nav-list__link'>Sign in</a>
@@ -119,7 +120,7 @@
                 </li>
             </ul>
         </section>
-        <section class="content trips">
+        <section id="articles" class="content trips">
             <div class="trips__title-wrapper">
                 <div class="trips__title-name__wrapper">
                     <h1 class="section-title trips__title-name">
@@ -137,27 +138,27 @@
                 </div>
             </div>
             <section class="trip-places">
-                <article class="bg-prop trip-places__item-1">
+                <article class="bg-prop trip-places__item trip-places__item-1">
                     <h2 class="trip-places__name">
                         Mount Fuji
                     </h2>
                 </article>
-                <article class="bg-prop trip-places__item-2">
+                <article class="bg-prop trip-places__item trip-places__item-2">
                     <h2 class="trip-places__name">
                         Kyoto
                     </h2>
                 </article>
-                <article class="bg-prop trip-places__item-3">
+                <article class="bg-prop trip-places__item trip-places__item-3">
                     <h2 class="trip-places__name">
                         Tokyo
                     </h2>
                 </article>
-                <article class="bg-prop trip-places__item-4">
+                <article class="bg-prop trip-places__item trip-places__item-4">
                     <h2 class="trip-places__name">
                         Niigata
                     </h2>
                 </article>
-                <article class="bg-prop trip-places__item-5">
+                <article class="bg-prop trip-places__item trip-places__item-5">
                     <h2 class="trip-places__name">
                         Sapporo
                     </h2>
@@ -208,14 +209,14 @@
                 </article>
             </section>
         </section>
-        <section class="content top-places">
+        <section id="locations" class="content top-places">
             <h1 class="section-title top-places__title">
                 Today top places to visit
             </h1>
             <hr class="section-title-bottom-line">
             <ul class="top-places-feed">
                 <li class="top-places-feed__item">
-                    <div class="bg-prop top-places-feed__photo1 top-places-feed__photo--sized">
+                    <div class="bg-prop trip-places__item top-places-feed__photo1 top-places-feed__photo--sized">
                         <section class="top-places-feed__caption">
                             <p class="top-places-feed__country">
                                 Nagoya
@@ -390,7 +391,39 @@
                 </li>
             </ul>
         </section>
+        <section id="videos" class="video">
+            <img src="./img/Video.png" alt="" class="video__screen">
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer__logo-wrapper">
+                <img src="./img/logo.svg" alt="odigo logo" class="footer__logo">
+            </div>
+            <section class="footer-map">
+                <ul class="footer-map__list">
+                    <li class="footer-map__item">Company</li>
+                    <li class="footer-map__item">About</li>
+                    <li class="footer-map__item">Team</li>
+                    <li class="footer-map__item">Careers</li>
+                    <li class="footer-map__item">Privacy Policy</li>
+                </ul>
+                <ul class="footer-map__list">
+                    <li class="footer-map__item">Locations</li>
+                    <li class="footer-map__item">Tokyo</li>
+                    <li class="footer-map__item">Kyoto</li>
+                    <li class="footer-map__item">Osaka</li>
+                    <li class="footer-map__item">Hokkaido</li>
+                </ul>
+                <ul class="footer-map__list">
+                    <li class="footer-map__item">Social Media</li>
+                    <li class="footer-map__item">Facebook</li>
+                    <li class="footer-map__item">Twitter</li>
+                    <li class="footer-map__item">Instagram</li>
+                    <li class="footer-map__item">Youtube</li>
+                </ul>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
