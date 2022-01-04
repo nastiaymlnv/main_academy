@@ -248,7 +248,12 @@
     padding: 12px 19px;
 }
 
+.video{
+    margin-bottom: -2px;
+}
+
 .video__screen {
     width: 100%;
     height: 609px;
+    object-fit: cover;
 }
