@@ -1,12 +1,27 @@
+:root{
+    --text-color: #fff;
+    --bg-color: #F2F2F2;
+    --link-color: #006DFE;
+    --button-color: #1B7DFF;
+    --section-title-color: #102746;
+    --font-size-standart: 16px;
+    --font-size-m: 18px;
+    --font-size-l: 24px;
+    --font-size-xl: 30px;
+    --font-size-xxl: 35px;
+    --font-size-3xl: 50px;
+}
+
 html {
     font-family: Lato, Roboto, sans-serif;
-    background-color: #F2F2F2;
+    font-size: var(--font-size-standart);
+    background-color: var(--bg-color);
 }
 
 .button {
     display: inline-block;
-    background-color: #1B7DFF;
-    color: #fff;
+    background-color: var(--button-color);
+    color: var(--text-color);
     border: none;
     text-transform: uppercase;
 }
@@ -14,17 +29,17 @@ html {
 .link-wrapper{
     display: flex;
     flex-direction: row;
-    gap: 25px;
 }
 
 .link {
-    color: #006DFE;
+    color: var(--link-color);
     text-transform: uppercase;
+    margin-right: 25px;
 }
 
 .section-title{
-    color: #102746;
-    font-size: 35px;
+    color: var(--section-title-color);
+    font-size: var(--font-size-xxl);
     font-weight: 700;
 }
 
@@ -32,7 +47,7 @@ html {
     display: inline-block;
     height: 0;
     width: 253px;
-    border: 2px solid #006DFE;
+    border: 2px solid var(--button-color);
     padding: 0;
     margin: 7px 0 0;
 }

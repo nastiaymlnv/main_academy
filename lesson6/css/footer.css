@@ -1,7 +1,12 @@
+:root{
+    --text-color: #fff;
+    --footer-color: #0E1D28;
+    --font-size-m: 18px;
+}
+
 .footer {
-    background-color: #0E1D28;
-    color: #fff;
-    font-size: 16px;
+    background-color: var(--footer-color);
+    color: var(--text-color);
     line-height: 24px;
     padding: 118px 0;
 }
@@ -28,12 +33,6 @@
     flex-grow: 1;
 }
 
-/* .footer-map__list {
-} */
-
 .footer-map__item:first-child {
-    font-size: 18px;
+    font-size: var(--font-size-m);
 }
-
-/* .footer-map__item {
-} */
