@@ -50,6 +50,7 @@
 
 .trips {
     margin-bottom: 140px;
+    max-width: 1274px;
 }
 
 .trips__title-wrapper {
@@ -71,50 +72,18 @@
 .trips__view-all {
 } */
 
-.trip-places__item {
-    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-}
-
-.trip-places__item-1 {
-    grid-area: fuji;
-    background-image: url('../img/trips-mounts.png');
-}
-
-.trip-places__item-2 {
-    grid-area: kyoto;
-    background-image: url('../img/trips-kyoto.png');
-}
-.trip-places__item-3 {
-    grid-area: tokyo;
-    background-image: url('../img/trips-tokyo.png');
-}
-
-.trip-places__item-4 {
-    grid-area: niigata;
-    background-image: url('../img/trips-niigata.png');
-}
-.trip-places__item-5 {
-    grid-area: sapporo;
-    background-image: url('../img/trips-sapporo.png');
-}
-
-.bg-prop{
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
 .trip-places {
-    margin-top: 36px;
+    margin-top: 26px;
     margin-bottom: 130px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 354px 283px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-template-areas:
-        "fuji fuji fuji kyoto kyoto kyoto"
-        "tokyo tokyo niigata niigata sapporo sapporo";
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.trip-places__item {
+    position: relative;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    margin: 10px 10px 0 0;
 }
 
 .trip-places__name{
@@ -184,61 +153,40 @@
 } */
 
 .top-places-feed {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
     grid-template-columns: repeat(3, 385px);
     grid-template-rows: repeat(2, 567px);
-    row-gap: 52px;
-    column-gap: 58px;
-    margin-top: 54px;
+    row-gap: 52px; */
+    /* column-gap: 58px; */
+    /* margin-top: 54px; */
 }
 
-/* .top-places-feed__item {
-} */
+.top-places-feed__item {
+    box-sizing: border-box;
+    max-width: 386px;
+    margin: 60px 40px 0 0;
+}
 
-.top-places-feed__photo--sized{
-    width: 386px;
-    height: 377px;
+.top-places-feed__item-wrapper{
     position: relative;
 }
 
-.top-places-feed__photo1 {
-    background-image: url('../img/top-places-nagoya.png');
-}
-
-.top-places-feed__photo2 {
-    background-image: url('../img/top-places-niigata.png');
-}
-
-.top-places-feed__photo3 {
-    background-image: url('../img/top-places-osaka.png');
-}
-
-.top-places-feed__photo4 {
-    background-image: url('../img/top-places-saitama.png');
-}
-
-.top-places-feed__photo5 {
-    background-image: url('../img/top-places-ueno.png');
-}
-
-.top-places-feed__photo6 {
-    background-image: url('../img/top-places-shibuya.png');
-}
-
 .top-places-feed__caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
     background-color: rgba(21, 24, 36, 0.6);
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    box-sizing: border-box;
     padding: 15px 15px 15px 25px;
+    box-sizing: border-box;
 }
 
 .top-places-feed__country {
@@ -273,6 +221,7 @@
 .top-places-feed__description {
     margin: 45px 0 31px;
     line-height: 24px;
+    padding-right: 10px;
 }
 
 .top-places-feed__more-button {
