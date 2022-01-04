@@ -24,6 +24,23 @@ html {
     color: var(--text-color);
     border: none;
     text-transform: uppercase;
+    position: relative;
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--text-color);
+    opacity: 0.3;
+    transition: 0.5s ease;
+}
+
+.button:hover::before{
+    width: 100%;
 }
 
 .link-wrapper{
@@ -35,6 +52,31 @@ html {
     color: var(--link-color);
     text-transform: uppercase;
     margin-right: 25px;
+    transition: 0.5s;
+}
+
+.link:hover{
+    transform: scale(1.2);
+}
+
+.link-hover{
+    position: relative;
+}
+
+.link-hover:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: var(--text-color);
+    bottom: 0;
+    margin-bottom: -4px;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.link-hover:hover:before{
+    width: 100%;
 }
 
 .section-title{
@@ -43,11 +85,19 @@ html {
     font-weight: 700;
 }
 
-.section-title-bottom-line{
-    display: inline-block;
-    height: 0;
+.section-title-line{
+    position: relative;
+}
+
+.section-title-line::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 2px;
     width: 253px;
-    border: 2px solid var(--button-color);
+    background-color: var(--button-color);
     padding: 0;
-    margin: 7px 0 0;
+    margin-bottom: -14px;
 }

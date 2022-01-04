@@ -1,6 +1,7 @@
 :root{
     --text-color: #fff;
     --section-title-color: #102746;
+    --link-color: #006DFE;
     --font-size-m: 18px;
     --font-size-l: 24px;
     --font-size-xl: 30px;
@@ -49,6 +50,15 @@
     margin-right: 55px;
 }
 
+.benefits-categories__item{
+    transition: 1s;
+}
+
+.benefits-categories__item:hover{
+    background-color: rgba(0, 109, 254, 0.1);
+    padding: 0 10px;
+}
+
 .benefits-categories__item:hover .benefits-categories__title {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -71,7 +81,7 @@
 }
 
 .trip-places {
-    margin-top: 26px;
+    margin-top: 36px;
     margin-bottom: 130px;
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +92,19 @@
     position: relative;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
     margin: 10px 10px 0 0;
+}
+
+.trip-places__img{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+.trip-places__item-wrapper{
+    overflow: hidden;
+}
+
+.trip-places__item:hover .trip-places__img{
+    transform: scale(1);
 }
 
 .trip-places__name{
@@ -163,7 +186,7 @@
 
 .top-places-feed__caption {
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -175,6 +198,8 @@
     font-weight: 700;
     padding: 15px 15px 15px 25px;
     box-sizing: border-box;
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .top-places-feed__country {
@@ -184,6 +209,20 @@
 .top-places-feed__insights {
     display: flex;
     position: relative;
+}
+
+.top-places-feed__img {
+    opacity: 0.7;
+    transition: 1s ease;
+}
+
+.top-places-feed__item:hover .top-places-feed__img {
+    opacity: 1;
+}
+
+.top-places-feed__item:hover .top-places-feed__caption {
+    opacity: 1;
+    bottom: 0;
 }
 
 .likes{

@@ -36,3 +36,7 @@
 .footer-map__item:first-child {
     font-size: var(--font-size-m);
 }
+
+.footer-map__link{
+    color: var(--text-color);
+}
