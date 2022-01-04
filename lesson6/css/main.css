@@ -17,12 +17,8 @@
 .benefits-categories {
     display: flex;
     flex-direction: row;
-    gap: 55px;
     padding: 0 106px 120px 53px;
 }
-
-/* .benefits-categories__item {
-} */
 
 .benefits-categories__img-wrapper {
     padding-bottom: 37px;
@@ -37,6 +33,10 @@
     font-size: 18px;
     font-weight: 700;
     color: #000;
+}
+
+.benefits-categories__item:not(:last-child){
+    margin-right: 55px;
 }
 
 .benefits-categories__item:hover .benefits-categories__title {
@@ -59,18 +59,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
-/* .trips__title-name__wrapper{
-}
-
-.trips__title-name {
-}
-
-.trips__link-wrapper {
-}
-
-.trips__view-all {
-} */
 
 .trip-places {
     margin-top: 26px;
@@ -98,33 +86,33 @@
 .more-about-places {
     display: flex;
     flex-direction: column;
-    gap: 77px;
     color: #102746;
 }
 
 .more-about-places__item {
     display: flex;
     flex-direction: row;
-    gap: 108px;
     align-items: center;
+    margin: 0 77px 77px 0;
+}
+
+.more-about-places__item:last-child{
+    margin-bottom: 0;
 }
 
 .more-about-places__item:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-/* .more-about-places__img-wrapper {
-}
-
-.more-about-places__img {
-} */
-
 .more-about-places__info {
     padding: 0 47px 0 0;
+    margin-left: 108px;
 }
 
 .more-about-places__item:nth-child(even) .more-about-places__info{
     padding: 0 0 0 47px;
+    margin-left: 0;
+    margin-right: 108px;
 }
 
 .more-about-places__title {
@@ -149,18 +137,9 @@
     margin-bottom: 144px;
 }
 
-/* .top-places__title {
-} */
-
 .top-places-feed {
     display: flex;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(3, 385px);
-    grid-template-rows: repeat(2, 567px);
-    row-gap: 52px; */
-    /* column-gap: 58px; */
-    /* margin-top: 54px; */
 }
 
 .top-places-feed__item {
@@ -196,27 +175,21 @@
 .top-places-feed__insights {
     font-size: 16px;
     display: flex;
-    gap: 15px;
     position: relative;
+}
+
+.likes{
+    margin-right: 15px;
 }
 
 .likes, .comments {
     display: flex;
     align-items: center;
-    gap: 5px;
 }
 
-/* .likes__amount{
+.likes__amount, .comments__amount{
+    margin-right: 5px;
 }
-
-.likes__icon{
-}
-
-.comments__amount{
-}
-
-.comments__icon{
-} */
 
 .top-places-feed__description {
     margin: 45px 0 31px;
@@ -227,9 +200,6 @@
 .top-places-feed__more-button {
     padding: 12px 19px;
 }
-
-/* .video {
-} */
 
 .video__screen {
     width: 100%;
