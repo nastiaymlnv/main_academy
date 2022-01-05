@@ -212,6 +212,7 @@
 }
 
 .top-places-feed__img {
+    width: 100%;
     opacity: 0.7;
     transition: 1s ease;
 }

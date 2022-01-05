@@ -1,0 +1,147 @@
+:root{
+    --text-color: #fff;
+    --bg-color: #F2F2F2;
+}
+
+@media screen and (max-width: 1270px) {
+    .media-content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .trip-places{
+        justify-content: center;
+    }
+
+    .trip-places__item{
+        width: 35%;
+        height: 100%;
+    }
+    .top-places-feed{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .header-hero{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .more-about-places__item, .more-about-places__item:nth-child(even){
+        background-color: var(--text-color);
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .more-about-places__img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .more-about-places__description {
+        margin-top: 45px;
+    }
+
+    .more-about-places__info,
+    .more-about-places__item:nth-child(even) .more-about-places__info {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .benefits, .trips, .trip-places, .top-places {
+        margin-bottom: 50px;
+    }
+
+    .footer-content{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .header-form{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-title{
+        padding-bottom: 200px;
+    }
+
+    .header-form__input{
+        margin-bottom: 20px;
+    }
+
+    .benefits{
+        background-color: inherit;
+        box-shadow: none;
+        margin-top: -115px;
+        margin-bottom: 0;
+    }
+
+    .benefits__title{
+        background-color: var(--bg-color);
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .benefits-categories {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 50px 0;
+    }
+
+    .benefits-categories__item{
+        background-color: var(--text-color);
+        margin-top: 20px;
+        padding: 50px;
+    }
+
+    .benefits-categories__item:not(:last-child){
+        margin-right: 0;
+    }
+
+    .trip-places__item {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .top-places-feed__item{
+        margin-right: 0;
+    }
+
+    .trips__title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .trips__link-wrapper{
+        margin-top: 30px;
+    }
+
+    .trip-places__item {
+        width: 70%;
+        margin-right: 0;
+    }
+
+    .video__screen{
+        height: 400px;
+    }
+
+    .footer{
+        padding: 60px 0;
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer__logo-wrapper{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
