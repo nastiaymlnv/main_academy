@@ -18,6 +18,10 @@ html {
     background-color: var(--bg-color);
 }
 
+#hamburger-menu__toggle{
+    display: none;
+}
+
 .button {
     display: inline-block;
     background-color: var(--button-color);

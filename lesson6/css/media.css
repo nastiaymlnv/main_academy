@@ -1,6 +1,7 @@
 :root{
     --text-color: #fff;
     --bg-color: #F2F2F2;
+    --footer-color: #0E1D28;
 }
 
 @media screen and (max-width: 1270px) {
@@ -110,6 +111,99 @@
 }
 
 @media screen and (max-width: 700px){
+    #hamburger-menu__toggle, .hamburger-menu__btn{
+        display: unset;
+    }
+
+    #hamburger-menu__toggle{
+        opacity: 0;
+    }
+
+    .hamburger-menu{
+        position: relative;
+    }
+
+    .hamburger-menu__btn{
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 24px;
+        z-index: 1;
+        margin-right: 20px;
+        margin-top: 3px;
+    }
+
+    .hamburger-menu__btn span,
+    .hamburger-menu__btn span::before,
+    .hamburger-menu__btn span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 50%;
+        background-color: var(--text-color);
+        transition-duration: .3s;
+    }
+
+    .hamburger-menu__btn span::before {
+        content: '';
+        top: -10px;
+    }
+
+    .hamburger-menu__btn span::after {
+        content: '';
+        top: 10px;
+    }
+
+    .nav-list {
+        position: absolute;
+        display: block;
+        visibility: hidden;
+        top: -56px;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        padding: 20px;
+        padding-top: 100px;
+        background-color: var(--footer-color);
+        align-items: flex-end;
+        box-sizing: border-box;
+    }
+
+    .nav-list__item{
+        margin-bottom: 10px;
+    }
+
+    .header-hero{
+        margin-right: 0;
+    }
+
+    .media-content{
+        padding-right: 0;
+    }
+
+    #hamburger-menu__toggle:checked ~ .hamburger-menu__btn .hamburger-menu__space {
+        transform: rotate(45deg);
+    }
+
+    #hamburger-menu__toggle:checked ~ .hamburger-menu__btn .hamburger-menu__space::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #hamburger-menu__toggle:checked ~ .hamburger-menu__btn .hamburger-menu__space::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #hamburger-menu__toggle:checked ~ .nav-list {
+        visibility: visible;
+    }
+
+    .media-content{
+        padding-right: 10px;
+    }
+
     .top-places-feed__item{
         margin-right: 0;
     }
@@ -124,7 +218,7 @@
     }
 
     .trip-places__item {
-        width: 70%;
+        width: 60%;
         margin-right: 0;
     }
 
@@ -143,5 +237,11 @@
     .footer__logo-wrapper{
         margin-bottom: 20px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .trip-places__item {
+        width: 90%;
     }
 }
