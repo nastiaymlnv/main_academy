@@ -1,13 +1,4 @@
-:root{
-    --text-color: #fff;
-    --section-title-color: #102746;
-    --link-color: #006DFE;
-    --font-size-m: 18px;
-    --font-size-l: 24px;
-    --font-size-xl: 30px;
-    --font-size-xxl: 35px;
-    --font-size-3xl: 50px;
-}
+@import url('style.css');
 
 .content{
     max-width: 1266px;
@@ -51,12 +42,15 @@
 }
 
 .benefits-categories__item{
-    transition: 1s;
+    padding: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: transform 1s;
 }
 
 .benefits-categories__item:hover{
     background-color: rgba(0, 109, 254, 0.1);
-    padding: 0 10px;
+    transform: scale(1.1);
 }
 
 .benefits-categories__item:hover .benefits-categories__title {
@@ -96,7 +90,7 @@
 
 .trip-places__img{
     transform: scale(1.1);
-    transition: .3s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .trip-places__item-wrapper{
@@ -140,6 +134,7 @@
 .more-about-places__info {
     padding: 0 47px 0 0;
     margin-left: 108px;
+    width: 100%;
 }
 
 .more-about-places__item:nth-child(even) .more-about-places__info{
@@ -153,6 +148,7 @@
     line-height: 40px;
     font-size: var(--font-size-xl);
     font-weight: 700;
+    width: 100%;
 }
 
 .more-about-places__description {
@@ -172,6 +168,7 @@
 .top-places-feed {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .top-places-feed__item {
@@ -182,11 +179,12 @@
 
 .top-places-feed__item-wrapper{
     position: relative;
+    overflow: hidden;
 }
 
 .top-places-feed__caption {
     position: absolute;
-    bottom: -20px;
+    bottom: -50px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -199,7 +197,7 @@
     padding: 15px 15px 15px 25px;
     box-sizing: border-box;
     opacity: 0;
-    transition: 1s ease;
+    transition: all 1s ease;
 }
 
 .top-places-feed__country {
@@ -214,7 +212,7 @@
 .top-places-feed__img {
     width: 100%;
     opacity: 0.7;
-    transition: 1s ease;
+    transition: opacity 1s ease;
 }
 
 .top-places-feed__item:hover .top-places-feed__img {

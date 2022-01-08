@@ -1,12 +1,4 @@
-:root{
-    --text-color: #fff;
-    --input-border-color: #BFC0C5;
-    --font-size-m: 18px;
-    --font-size-l: 24px;
-    --font-size-xl: 30px;
-    --font-size-xxl: 35px;
-    --font-size-3xl: 50px;
-}
+@import url('style.css');
 
 .header-content{
     max-width: 1060px;

@@ -1,8 +1,4 @@
-:root{
-    --text-color: #fff;
-    --footer-color: #0E1D28;
-    --font-size-m: 18px;
-}
+@import url('style.css');
 
 .footer {
     background-color: var(--footer-color);
