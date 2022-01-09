@@ -1,0 +1,53 @@
+$header-color: #212832;
+$hero-description-color: #DF6951;
+$hero-title-color: #181E4B;
+$text-color: #5E6282;
+$btn-text: #fff;
+$btn-hero: #F1A501;
+$play-demo: #686D77;
+
+%google-sans-font {
+    font-family: 'Google Sans';
+    font-size: 17px;
+}
+
+%bg-prop{
+    background-repeat: no-repeat;
+}
+
+@mixin poppins-font-bold($size){
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: $size;
+}
+
+@mixin poppins-font-semibold($size){
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: $size;
+}
+
+%volkhov-font-bold{
+    font-family: Volkhov;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.category-description{
+    text-transform: uppercase;
+    @include poppins-font-bold(20px);
+}
+
+.category-title{
+    color: $hero-title-color;
+    @extend %volkhov-font-bold;
+}
+
+.btn{
+    color: $btn-text;
+    padding: 18px 26px;
+    border: none;
+    border-radius: 10px;
+    @extend %google-sans-font;
+    font-size: 18px;
+}

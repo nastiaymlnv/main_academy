@@ -1,0 +1,30 @@
+.btn {
+  font-family: 'Google Sans';
+  font-size: 17px;
+}
+
+.category-title {
+  font-family: Volkhov;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.category-description {
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.category-title {
+  color: #181E4B;
+}
+
+.btn {
+  color: #fff;
+  padding: 18px 26px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
