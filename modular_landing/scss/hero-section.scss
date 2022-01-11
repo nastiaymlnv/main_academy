@@ -9,7 +9,6 @@
     max-width: 1160px;
     margin: 0 auto;
     display: flex;
-    // padding: 47px 0 18px 0;
     padding-top: 47px;
 }
 
@@ -24,7 +23,7 @@
 
 .nav {
     display: flex;
-    flex-grow: 2;
+    flex-grow: 1;
     @extend %google-sans-font;
 }
 
@@ -46,6 +45,7 @@
 }
 
 .nav-list__item:hover:not(:last-child){
+    padding: 9px 21px;
     outline: 1px solid $header-color;
     border-radius: 5px;
 }
@@ -54,9 +54,11 @@
     @extend %google-sans-font;
     text-transform: uppercase;
     border: none;
-    width: 50px;
-    appearance: none;
     background-color: transparent;
+    color: $header-color;
+    cursor: pointer;
+    margin-left: 21px;
+    box-sizing: border-box;
 }
 
 .lang-toggle{
@@ -64,24 +66,13 @@
     padding: 0;
 }
 
-.lang-toggle::after{
-    content: url('../img/dropdown-arrow.png');
-    width: 9px;
-    height: 4.5px;
-    position: absolute;
-    right: 15px;
-}
-
 .hero-content {
     margin: 0 auto;
     max-width: 1208px;
-    background-image: url('../img/hero-image.png');
+    background-image: url('../img/hero-girl-tourist.png');
     @extend %bg-prop;
     background-position: right 0;
     padding: 117px 0;
-}
-
-.hero-info {
 }
 
 .hero-info__category-description {
@@ -122,7 +113,7 @@
     display: flex;
 }
 
-.hero-interactive-elements__btn {
+.hero-interactive-elements__btn_color {
     background-color: $btn-hero;
     margin-right: 44px;
 }
@@ -159,9 +150,3 @@
     @include poppins-font-semibold(17px);
     color: $play-demo;
 }
-
-.hero-image-wrapper {
-}
-.hero-image {
-}
-
