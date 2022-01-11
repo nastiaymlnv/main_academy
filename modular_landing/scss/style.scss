@@ -47,13 +47,14 @@ $play-demo: #686D77;
 }
 
 .category-description{
-    text-transform: uppercase;
     color: $text-color;
+    text-align: center;
     @include poppins-font-medium(18px);
 }
 
 .category-title{
     color: $hero-title-color;
+    text-align: center;
     @extend %volkhov-font-bold;
 }
 

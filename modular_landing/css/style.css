@@ -10,8 +10,8 @@
 }
 
 .category-description {
-  text-transform: uppercase;
   color: #5E6282;
+  text-align: center;
   font-family: Poppins;
   font-weight: 600;
   font-size: 18px;
@@ -19,6 +19,7 @@
 
 .category-title {
   color: #181E4B;
+  text-align: center;
 }
 
 .btn {

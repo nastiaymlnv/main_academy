@@ -14,15 +14,16 @@
 }
 
 .category-description {
-  text-transform: uppercase;
   color: #5E6282;
+  text-align: center;
   font-family: Poppins;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .category-title {
   color: #181E4B;
+  text-align: center;
 }
 
 .btn {
@@ -122,6 +123,7 @@
 }
 
 .hero-info__category-description {
+  text-transform: uppercase;
   color: #DF6951;
   font-family: Poppins;
   font-weight: 700;
@@ -129,6 +131,7 @@
 }
 
 .hero-info__category-title {
+  color: #181E4B;
   font-size: 84px;
   line-height: 89px;
   letter-spacing: -0.04em;

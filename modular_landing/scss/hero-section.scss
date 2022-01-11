@@ -76,12 +76,14 @@
 }
 
 .hero-info__category-description {
+    text-transform: uppercase;
     color: $hero-description-color;
     @include poppins-font-bold(20px);
 }
 
 .hero-info__category-title {
     @extend %volkhov-font-bold;
+    color: $hero-title-color;
     font-size: 84px;
     line-height: 89px;
     letter-spacing: -0.04em;
