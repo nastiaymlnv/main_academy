@@ -11,9 +11,10 @@
 
 .category-description {
   text-transform: uppercase;
+  color: #5E6282;
   font-family: Poppins;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .category-title {

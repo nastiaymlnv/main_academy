@@ -1,0 +1,79 @@
+@import 'style.scss';
+
+.main-advantages {
+    margin: 0 auto;
+    max-width: 1228px;
+}
+
+.best-services {
+    text-align: center;
+    margin: 105px 0 156px 0;
+    background-image: url('../img/best-services-plus-bg.png');
+    @extend %bg-prop;
+    background-position: right 0;
+}
+
+.best-services__category-title {
+    margin: 10px 0 68px 0;
+}
+
+.services-list {
+    display: flex;
+}
+
+.services-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 45px 43px;
+    margin-right: 35px;
+    position: relative;
+    transition: all .5s;
+}
+
+.services-list__item:hover{
+    border-radius: 36px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.services-list__item::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: $hero-description-color;
+    border-radius: 30px 0 10px;
+    bottom: -33px;
+    left: -35px;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.services-list__item:hover::before{
+    opacity: 1;
+}
+
+.services-list__image-wrapper {
+    margin: 0 auto;
+}
+
+.services-list__title {
+    color: $text-heading-color;
+    @include open-sans-medium(20px);
+    margin: 30px 0 15px;
+}
+
+.services-list__description {
+    color: $text-color;
+    line-height: 26px;
+    @include poppins-font-semibold(16px);
+}

@@ -2,6 +2,7 @@ $header-color: #212832;
 $hero-description-color: #DF6951;
 $hero-title-color: #181E4B;
 $text-color: #5E6282;
+$text-heading-color: #1E1D4C;
 $btn-text: #fff;
 $btn-hero: #F1A501;
 $play-demo: #686D77;
@@ -21,9 +22,21 @@ $play-demo: #686D77;
     font-size: $size;
 }
 
+@mixin poppins-font-medium($size){
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: $size;
+}
+
 @mixin poppins-font-semibold($size){
     font-family: Poppins;
     font-weight: 500;
+    font-size: $size;
+}
+
+@mixin open-sans-medium($size){
+    font-family: 'Open Sans';
+    font-weight: 600;
     font-size: $size;
 }
 
@@ -35,7 +48,8 @@ $play-demo: #686D77;
 
 .category-description{
     text-transform: uppercase;
-    @include poppins-font-bold(20px);
+    color: $text-color;
+    @include poppins-font-medium(18px);
 }
 
 .category-title{
