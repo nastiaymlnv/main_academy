@@ -129,7 +129,6 @@
 .top-destinations {
   margin: 0 auto;
   max-width: 1102px;
-  padding-bottom: 186px;
   background-image: url("../img/top-destinations-decore.png");
   background-position: right center;
 }
@@ -191,5 +190,65 @@
   height: 20px;
   width: 20px;
   margin-right: 10px;
+}
+
+.book-trip {
+  max-width: 1114px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book-trip__category-description {
+  text-align: left;
+}
+
+.book-trip__category-title {
+  margin: 15px 0 31px;
+  text-align: left;
+  line-height: 64.5px;
+  text-transform: capitalize;
+}
+
+.booking-list__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 48px;
+}
+
+.booking-list__image {
+  margin-right: 21px;
+  width: 47px;
+  height: 48px;
+}
+
+.booking-list__text-wrapper {
+  color: #5E6282;
+}
+
+.booking-list__title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.booking-list__description {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.92px;
+  max-width: 395px;
+}
+
+.book-trip__image {
+  margin-right: -50px;
 }
 /*# sourceMappingURL=main-section.css.map */

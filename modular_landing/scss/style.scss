@@ -34,6 +34,12 @@ $play-demo: #686D77;
     font-size: $size;
 }
 
+@mixin poppins-font-normal($size){
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: $size;
+}
+
 @mixin open-sans-medium($size){
     font-family: 'Open Sans';
     font-weight: 600;
