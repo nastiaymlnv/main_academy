@@ -251,4 +251,41 @@
 .book-trip__image {
   margin-right: -50px;
 }
+
+.people-say {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 1165px;
+  margin: 0 auto;
+}
+
+.people-say__category-description {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.people-say__category-title {
+  text-align: left;
+  margin-top: 8px;
+  line-height: 64px;
+  text-transform: capitalize;
+}
+
+.people-say__circles-wrapper {
+  margin-top: 82px;
+}
+
+.people-say__circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.people-say__circle:first-child {
+  background-color: #39425D;
+}
 /*# sourceMappingURL=main-section.css.map */
