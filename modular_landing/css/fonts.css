@@ -1,8 +1,5 @@
 /* Monserrat-400-regular - latin */
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* poppins-regular - latin */
 @font-face {
     font-family: 'Poppins';
