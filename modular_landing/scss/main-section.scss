@@ -202,12 +202,12 @@
 }
 
 .people-say__category-description {
-    text-align: left;
+    text-align: left !important;
     text-transform: uppercase;
 }
 
 .people-say__category-title {
-    text-align: left;
+    text-align: left !important;
     margin-top: 8px;
     line-height: 64px;
     text-transform: capitalize;
