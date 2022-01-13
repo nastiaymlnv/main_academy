@@ -83,7 +83,7 @@
 
 .hero-info__category-title {
     @extend %volkhov-font-bold;
-    color: $hero-title-color;
+    color: $main-title-color;
     font-size: 84px;
     line-height: 89px;
     letter-spacing: -0.04em;
@@ -117,7 +117,7 @@
 }
 
 .hero-interactive-elements__btn {
-    background-color: $btn-hero;
+    background-color: $btn-hero-color;
     margin-right: 44px;
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
 }
@@ -151,5 +151,5 @@
 
 .video-btn__text{
     @include poppins-font-semibold(17px);
-    color: $play-demo;
+    color: $play-demo-color;
 }

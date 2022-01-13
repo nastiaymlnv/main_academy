@@ -85,7 +85,6 @@
 .top-destinations {
     margin: 0 auto;
     max-width: 1102px;
-    // padding-bottom: 186px;
     background-image: url('../img/top-destinations-decore.png');
     @extend %bg-prop;
     background-position: right center;
@@ -148,7 +147,6 @@
 .book-trip {
     max-width: 1114px;
     margin: 0 auto;
-    // padding-bottom: 200px;
     display: flex;
     align-items: center;
 }
@@ -221,13 +219,13 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    background-color: #E5E5E5;
+    background-color: $circle-color;
     border-radius: 50%;
     margin-right: 25px;
 }
 
 .people-say__circle:first-child{
-    background-color: #39425D;
+    background-color: $circle-hover-color;
 }
 
 .sponsors {
@@ -277,7 +275,7 @@
 }
 
 .subscribe-wrapper {
-    background-color: #dfd7f9;
+    background-color: $subscribe-bg-color;
     border-radius: 129px 20px 20px 20px;
     position: relative;
     margin-left: 87px;

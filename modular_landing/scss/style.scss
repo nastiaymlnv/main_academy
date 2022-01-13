@@ -1,11 +1,15 @@
 $header-color: #212832;
 $hero-description-color: #DF6951;
-$hero-title-color: #181E4B;
+$main-title-color: #181E4B;
 $text-color: #5E6282;
 $text-heading-color: #1E1D4C;
-$btn-text: #fff;
-$btn-hero: #F1A501;
-$play-demo: #686D77;
+$btn-text-color: #fff;
+$btn-hero-color: #F1A501;
+$play-demo-color: #686D77;
+$circle-color: #E5E5E5;
+$circle-hover-color: #39425D;
+$subscribe-bg-color: #dfd7f9;
+$footer-map-title-color: #080809;
 
 %google-sans-font {
     font-family: 'Google Sans';
@@ -59,13 +63,13 @@ $play-demo: #686D77;
 }
 
 .category-title{
-    color: $hero-title-color;
+    color: $main-title-color;
     text-align: center;
     @extend %volkhov-font-bold;
 }
 
 .btn{
-    color: $btn-text;
+    color: $btn-text-color;
     padding: 18px 26px;
     border: none;
     border-radius: 10px;

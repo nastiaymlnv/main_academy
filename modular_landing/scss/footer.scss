@@ -13,12 +13,12 @@
 
 .footer__logo-name {
     @include poppins-font-semibold(44px);
-    color: $hero-title-color;
+    color: $main-title-color;
     margin-bottom: 19px;
 }
 
 .footer__logo-link {
-    color: $hero-title-color;
+    color: $main-title-color;
 }
 
 .footer__logo-slogan {
@@ -43,7 +43,7 @@
 
 .footer-list__item:first-child {
     @include poppins-font-bold(21px);
-    color: #080809;
+    color: $footer-map-title-color;
     margin-bottom: 34px;
 }
 
