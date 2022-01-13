@@ -267,11 +267,12 @@
 .subscribe {
     max-width: 1356px;
     margin: 0 auto;
-    padding-bottom: 96px;
+    padding-bottom: 70px;
+    margin-bottom: 96px;
     position: relative;
     background-image: url('../img/subscribe-plus-bg.png');
     @extend %bg-prop;
-    background-position: right bottom 25px;
+    background-position: right bottom;
 }
 
 .subscribe-wrapper {

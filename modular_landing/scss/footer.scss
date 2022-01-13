@@ -1,0 +1,112 @@
+@import 'style.scss';
+
+.footer {
+    color: $text-color;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__logo-name {
+    @include poppins-font-semibold(44px);
+    color: $hero-title-color;
+    margin-bottom: 19px;
+}
+
+.footer__logo-link {
+    color: $hero-title-color;
+}
+
+.footer__logo-slogan {
+    @include poppins-font-semibold(13px);
+    line-height: 22px;
+    max-width: 207px;
+}
+
+.footer__map {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.4;
+}
+
+.footer-list {
+    @include poppins-font-semibold(18px);
+}
+
+.footer-list__item{
+    margin-bottom: 13px;
+}
+
+.footer-list__item:first-child {
+    @include poppins-font-bold(21px);
+    color: #080809;
+    margin-bottom: 34px;
+}
+
+.footer-list__item-link {
+    color: $text-color;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+.social-media-list {
+    display: flex;
+}
+
+.social-media-list__item {
+    position: relative;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 25px;
+    transition: transform 0.5s;
+}
+
+.social-media-list__item:hover {
+    transform: scale(1.1001);
+    background: conic-gradient(from 180deg at 50% 50%,
+        #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg,
+        #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg,
+        #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg,
+        #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+    box-shadow: none;
+}
+
+.social-media-list__item:hover .social-media-list__icon{
+    filter: invert(1);
+}
+
+.social-media-list__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.download-app-title {
+    display: inline-block;
+    @include poppins-font-semibold(20px);
+    letter-spacing: 0.005em;
+    margin: 26px 0 16px;
+}
+
+.download-app-list {
+    display: flex;
+}
+
+.download-app-list__item:first-child {
+    margin-right: 7px;
+}
+
+.footer-copyright {
+    @include poppins-font-semibold(14px);
+    text-align: center;
+    margin: 84px 0 79px;
+}
