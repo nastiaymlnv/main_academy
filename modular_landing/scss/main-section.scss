@@ -22,6 +22,7 @@
 
 .services-list {
     display: flex;
+    justify-content: space-around;
 }
 
 .services-list__item {
@@ -29,16 +30,15 @@
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
-    background-color: #fff;
     box-sizing: border-box;
     padding: 45px 43px;
-    margin-right: 35px;
     position: relative;
     transition: all .5s;
 }
 
 .services-list__item:hover{
     border-radius: 36px;
+    background-color: #fff;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
         0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
         0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
@@ -79,6 +79,7 @@
     color: $text-color;
     line-height: 26px;
     @include poppins-font-semibold(16px);
+    max-width: 181px;
 }
 
 .top-destinations {
