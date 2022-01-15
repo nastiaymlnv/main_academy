@@ -147,19 +147,25 @@
 .book-trip {
     max-width: 1114px;
     margin: 0 auto;
+    padding-bottom: 200px;
+    padding-top: 186px;
     display: flex;
     align-items: center;
+    background-image: url('../img/booking-trip-blue-shadow.png');
+    @extend %bg-prop;
+    background-position: top right;
 }
 
 .book-trip__category-description {
-    text-align: left;
+    text-align: left !important;
 }
 
 .book-trip__category-title{
     margin: 15px 0 31px;
-    text-align: left;
+    text-align: left !important;
     line-height: 64.5px;
     text-transform: capitalize;
+    max-width: 511px;
 }
 
 .booking-list__item {
@@ -189,8 +195,33 @@
     max-width: 395px;
 }
 
+.book-trip__popup-wrapper{
+    margin: 0 auto;
+    position: relative;
+}
+
+.book-trip__popup-wrapper::after{
+    content: url('../img/booking-popup-mini.png');
+    position: absolute;
+    border-radius: 18px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    bottom: 52px;
+    right: -115px;
+}
+
 .book-trip__image {
-    margin-right: -50px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 26px;
 }
 
 .people-say {
