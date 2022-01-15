@@ -282,6 +282,8 @@
   display: flex;
   max-width: 1114px;
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 138px;
 }
 
 .people-say__category-description {
@@ -294,6 +296,7 @@
   margin-top: 8px;
   line-height: 64px;
   text-transform: capitalize;
+  max-width: 409px;
 }
 
 .people-say__circles-wrapper {
@@ -311,6 +314,40 @@
 
 .people-say__circle:first-child {
   background-color: #39425D;
+}
+
+.people-say__js-image-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.people-say__js-image-wrapper::after {
+  content: url("../img/people-say-popup-pagination.png");
+  position: absolute;
+  top: 50%;
+  right: -143px;
+}
+
+.people-say__js-popup {
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 10px;
+}
+
+.people-say__js-popup-wrapper {
+  position: relative;
+}
+
+.people-say__js-popup-wrapper::after {
+  content: url("../img/people-say-js-popup-next.png");
+  position: absolute;
+  bottom: -77px;
+  right: -48px;
+  z-index: -1;
+  border: 2px solid #F7F7F7;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
 }
 
 .sponsors {
