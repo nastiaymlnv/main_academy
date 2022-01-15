@@ -1,0 +1,266 @@
+@import 'style.scss';
+
+@media screen and (max-width: 1270px) {
+    .people-say{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .people-say__category-title, .people-say__category-description{
+        text-align: center !important;
+    }
+
+    .people-say__text-wrapper{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .header, .main-advantages, .footer{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .services-list, .destinations-list, .sponsors-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .destinations-list__item{
+        margin-bottom: 40px;
+    }
+
+    .book-trip{
+        flex-direction: column;
+        background-position: bottom right;
+    }
+
+    .book-trip__category-description, .book-trip__category-title{
+        text-align: center !important;
+    }
+
+    .booking-list__item{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .hero-content{
+        background-size: auto 60%;
+        background-position: right center;
+    }
+
+    .subscribe-form__input{
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form__label{
+        top: calc(25px + 9px);
+    }
+}
+
+@media screen and (max-width: 920px){
+    .hero-content{
+        background-image: none;
+    }
+
+    .header{
+        background-position: right 50% top;
+        padding-right: 0;
+    }
+
+    .hamburger-menu__toggle, .hamburger-menu__btn{
+        display: unset;
+    }
+
+    .hamburger-menu__toggle{
+        opacity: 0;
+    }
+
+    .hamburger-menu{
+        position: relative;
+    }
+
+    .hamburger-menu__btn{
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 24px;
+        z-index: 1;
+        margin-right: 20px;
+        margin-top: 3px;
+        z-index: 2;
+    }
+
+    .hamburger-menu__btn span,
+    .hamburger-menu__btn span::before,
+    .hamburger-menu__btn span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 50%;
+        background-color: $header-color;
+        transition-duration: .3s;
+    }
+
+    .hamburger-menu__btn span::before {
+        content: '';
+        top: -10px;
+    }
+
+    .hamburger-menu__btn span::after {
+        content: '';
+        top: 10px;
+    }
+
+    .nav-list {
+        position: absolute;
+        display: block;
+        visibility: hidden;
+        top: -56px;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        padding: 20px;
+        padding-top: 100px;
+        background-color: #FFF1DA;
+        align-items: flex-end;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    .nav-list__item{
+        margin-bottom: 10px;
+    }
+
+    .header-hero{
+        margin-right: 0;
+    }
+
+    .media-content{
+        padding-right: 0;
+    }
+
+    .hamburger-menu__toggle:checked ~ .hamburger-menu__btn .hamburger-menu__space {
+        transform: rotate(45deg);
+    }
+
+    .hamburger-menu__toggle:checked ~ .hamburger-menu__btn .hamburger-menu__space::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    .hamburger-menu__toggle:checked ~ .hamburger-menu__btn .hamburger-menu__space::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .hamburger-menu__toggle:checked ~ .nav-list {
+        visibility: visible;
+    }
+
+    .subscribe-wrapper{
+        padding: 50px 50px;
+    }
+
+    .subscribe-form__input{
+        max-width: max-content;
+    }
+
+    .footer-info{
+        flex-direction: column;
+    }
+
+    .footer__logo-wrapper{
+        align-self: center;
+        text-align: center;
+    }
+
+    .footer__logo-slogan{
+        max-width: max-content;
+    }
+
+    .footer-info, .footer__logo-wrapper{
+        margin-bottom: 30px;
+    }
+
+    .footer__downloads{
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .footer-copyright{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .people-say__js-popup-wrapper::after{
+        right: 10%;
+    }
+
+    .people-say__js-image-wrapper::after{
+        right: -10%;
+    }
+
+    .subscribe-wrapper{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .destinations-list__item{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .header, .main-advantages, .footer{
+        padding-left: 5px;
+        padding-right: 0px;
+        box-sizing: border-box;
+    }
+
+    .title-decoration::after{
+        display: none;
+    }
+
+    .book-trip__popup-wrapper::after{
+        right: -10%;
+        bottom: -25%;
+    }
+
+    .people-say__js-popup{
+        width: 80%;
+    }
+
+    .people-say__js-image-wrapper::after, .people-say__js-popup-wrapper::after{
+        display: none;
+    }
+
+    .people-say__js-popup-wrapper{
+        text-align: center;
+    }
+
+    .people-say__js-popup-wrapper::after{
+        left: 10%;
+    }
+
+    .subscribe-wrapper{
+        margin-right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .book-trip__popup-wrapper::after{
+        right: 0;
+    }
+}

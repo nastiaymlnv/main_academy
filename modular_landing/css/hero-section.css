@@ -58,6 +58,10 @@
   height: 34px;
 }
 
+#hamburger-menu__toggle {
+  display: none;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
