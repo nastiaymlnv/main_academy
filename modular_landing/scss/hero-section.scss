@@ -3,6 +3,7 @@
 .header{
     background-image: url('../img/hero-bg.png');
     @extend %bg-prop;
+    background-size: cover;
 }
 
 .hero-header {
@@ -21,7 +22,7 @@
     height: 34px;
 }
 
-#hamburger-menu__toggle{
+.hamburger-menu__toggle{
     display: none;
 }
 
@@ -46,12 +47,11 @@
 .nav-list__item{
     padding: 9px 21px;
     box-sizing: border-box;
-}
-
-.nav-list__item:hover:not(:last-child){
-    padding: 9px 21px;
-    outline: 1px solid $header-color;
-    border-radius: 5px;
+    &:hover:not(:last-child){
+        padding: 9px 21px;
+        outline: 1px solid $header-color;
+        border-radius: 5px;
+    }
 }
 
 .lang-switcher {
@@ -141,16 +141,15 @@
     padding: 0;
     margin-right: 21px;
     box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
-}
-
-.video-btn__figure::before {
-    content: url('../img/play-btn.svg');
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &::before {
+        content: url('../img/play-btn.svg');
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .video-btn__text{

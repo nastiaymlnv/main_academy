@@ -36,6 +36,7 @@
 
 .header {
   background-image: url("../img/hero-bg.png");
+  background-size: cover;
 }
 
 .hero-header {
@@ -58,7 +59,7 @@
   height: 34px;
 }
 
-#hamburger-menu__toggle {
+.hamburger-menu__toggle {
   display: none;
 }
 

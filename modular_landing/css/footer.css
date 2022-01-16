@@ -3,6 +3,10 @@
   font-size: 17px;
 }
 
+.footer-wrapper {
+  background-repeat: no-repeat;
+}
+
 .category-title {
   font-family: Volkhov;
   font-weight: 700;
@@ -28,6 +32,11 @@
   border: none;
   border-radius: 10px;
   font-size: 18px;
+}
+
+.footer-wrapper {
+  background-image: url("../img/footer-bg.png");
+  background-position: bottom right;
 }
 
 .footer {
@@ -162,6 +171,6 @@
   font-weight: 500;
   font-size: 14px;
   text-align: center;
-  margin: 84px 0 79px;
+  padding: 84px 0 79px;
 }
 /*# sourceMappingURL=footer.css.map */

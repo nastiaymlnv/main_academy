@@ -1,5 +1,11 @@
 @import 'style.scss';
 
+.footer-wrapper{
+    background-image: url('../img/footer-bg.png');
+    @extend %bg-prop;
+    background-position: bottom right;
+}
+
 .footer {
     color: $text-color;
     max-width: 1060px;
@@ -39,12 +45,11 @@
 
 .footer-list__item{
     margin-bottom: 13px;
-}
-
-.footer-list__item:first-child {
-    @include poppins-font-bold(21px);
-    color: $footer-map-title-color;
-    margin-bottom: 34px;
+    &:first-child {
+        @include poppins-font-bold(21px);
+        color: $footer-map-title-color;
+        margin-bottom: 34px;
+    }
 }
 
 .footer-list__item-link {
@@ -63,20 +68,18 @@
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     margin-right: 25px;
     transition: transform 0.5s;
-}
-
-.social-media-list__item:hover {
-    transform: scale(1.1001);
-    background: conic-gradient(from 180deg at 50% 50%,
-        #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg,
-        #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg,
-        #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg,
-        #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
-    box-shadow: none;
-}
-
-.social-media-list__item:hover .social-media-list__icon{
-    filter: invert(1);
+    &:hover {
+        transform: scale(1.1001);
+        background: conic-gradient(from 180deg at 50% 50%,
+            #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg,
+            #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg,
+            #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg,
+            #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+        box-shadow: none;
+    }
+    &:hover .social-media-list__icon{
+        filter: invert(1);
+    }
 }
 
 .social-media-list__link {
@@ -104,5 +107,5 @@
 .footer-copyright {
     @include poppins-font-semibold(14px);
     text-align: center;
-    margin: 84px 0 79px;
+    padding: 84px 0 79px;
 }
