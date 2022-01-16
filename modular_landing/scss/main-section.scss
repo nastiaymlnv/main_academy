@@ -36,7 +36,7 @@
     transition: all .5s;
     &:hover{
         border-radius: 36px;
-        background-color: #fff;
+        background-color: $bg-color-white;
         box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
             0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
             0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
@@ -115,7 +115,7 @@
 .destinations-list__content-wrapper{
     box-sizing: border-box;
     padding: 27px 25px 42px 20px;
-    background-color: #fff;
+    background-color: $bg-color-white;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -142,14 +142,11 @@
 
 .book-trip {
     max-width: 1114px;
-    margin: 0 auto;
     padding-bottom: 200px;
     padding-top: 186px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    background-image: url('../img/booking-trip-blue-shadow.png');
-    @extend %bg-prop;
-    background-position: top right;
 }
 
 .book-trip__category-description {
@@ -192,24 +189,11 @@
 }
 
 .book-trip__popup-wrapper{
-    margin: 0 auto;
     position: relative;
-    &::after{
-        content: url('../img/booking-popup-mini.png');
-        position: absolute;
-        border-radius: 18px;
-        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
-            0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
-            0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
-            0px 20px 13px rgba(0, 0, 0, 0.01),
-            0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
-            0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
-        bottom: 52px;
-        right: -115px;
-    }
 }
 
-.book-trip__image {
+.maxi-popup {
+    background: $bg-color-white;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
         0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
         0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
@@ -217,13 +201,150 @@
         0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
         0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     border-radius: 26px;
+    padding: 20px 25px 31px;
+    @include poppins-font-semibold(16px);
+    color: $popup-text-color;
+    letter-spacing: -0.005em;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        background: #59B1E6;
+        opacity: 0.4;
+        border-radius: 50%;
+        filter: blur(70px);
+        width: 354px;
+        height: 367px;
+        top: -59px;
+        right: -44px;
+        z-index: -1;
+    }
+}
+
+.maxi-popup__title {
+    @include poppins-font-semibold(18px);
+    line-height: 124.5%;
+    letter-spacing: 0.015em;
+    color: $footer-map-title-color;
+    padding: 26px 0 15px;
+}
+
+.maxi-popup__description {
+    padding-bottom: 21px;
+}
+
+.maxi-popup__date {
+    display: inline-block;
+    border-right: 1px solid $popup-text-color;
+    padding-right: 3px;
+}
+
+.maxi-popup__author {
+    display: inline;
+    margin-left: 13px;
+}
+
+.maxi-popup__options {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.maxi-popup__options-icon-wrapper{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $options-icon-color;
+    position: relative;
+    margin-right: 15px;
+}
+
+.maxi-popup__options-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.maxi-popup__amount-people-icon {
+    margin-right: 15px;
+}
+
+.maxi-popup__amount-people-text {
+    display: inline;
+    letter-spacing: -0.02em;
+}
+
+.heart-icon{
+    float: right;
+}
+
+.mini-popup {
+    display: flex;
+    max-width: 263px;
+    padding: 16px 25px 22px 20px;
+    background-color: $bg-color-white;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 18px;
+    @include poppins-font-semibold(14px);
+    position: absolute;
+    right: -115px;
+    bottom: 52px;
+}
+
+.mini-popup__info-wrapper {
+    color: $footer-map-title-color;
+    padding-left: 12px;
+}
+
+.mini-popup__description {
+    color: $popup-text-color;
+    letter-spacing: -0.035em;
+}
+
+.mini-popup__title {
+    font-size: 18px;
+    letter-spacing: -0.015em;
+    padding: 6px 0 14px;
+}
+
+.mini-popup__progress-title {
+    letter-spacing: -0.055em;
+    padding-bottom: 10px;
+}
+
+.mini-popup__progress-percent {
+    color: $progress-bar-color;
+}
+
+.mini-popup__progress-line {
+    display: block;
+    width: 156px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: $options-icon-color;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 40%;
+        border-radius: 30px;
+        background-color: $progress-bar-color;
+    }
 }
 
 .people-say {
+    max-width: 1165px;
     display: flex;
-    max-width: 1114px;
-    margin: 0 auto;
+    justify-content: space-between;
     padding-bottom: 138px;
+    margin: 0 auto;
 }
 
 .people-say__category-description {
@@ -255,37 +376,21 @@
     }
 }
 
-.people-say__js-image-wrapper{
-    position: relative;
+.people-say__js-window-wrapper{
     margin: 0 auto;
-    &::after{
-        content: url('../img/people-say-popup-pagination.png');
-        position: absolute;
-        top: 50%;
-        right: -143px;
-    }
+    display: flex;
+    align-items: center;
+    margin-left: 87px;
 }
 
-.people-say__js-popup{
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
-        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
-        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
-        0px 20px 13px rgba(0, 0, 0, 0.01),
-        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
-        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
-    border-radius: 10px;
-}
-
-.people-say__js-popup-wrapper{
+.people-say__js-card-wrapper{
     position: relative;
-    &::after{
-        content: url('../img/people-say-js-popup-next.png');
-        position: absolute;
-        bottom: -77px;
-        right: -48px;
-        z-index: -1;
-        border: 2px solid #F7F7F7;
-        border-radius: 10px;
+    color: $text-color;
+    max-width: 504px;
+    padding: 28px 68px 34px 34px;
+    border-radius: 10px;
+    &:first-child{
+        background-color: $bg-color-white;
         box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
             0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
             0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
@@ -293,6 +398,47 @@
             0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
             0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     }
+    &:not(:first-child){
+        border: 2px solid #F7F7F7;
+        margin: -155px -48px 0 87px;
+        z-index: -1;
+    }
+    &:first-child::before{
+        content: url('../img/people-say-person-icon.png');
+        position: absolute;
+        top: -34px;
+        left: -37px;
+    }
+    &:first-child .people-say__comment{
+        @include poppins-font-semibold(16px);
+    }
+}
+
+.people-say__comment {
+    @include open-sans-normal(16px);
+    line-height: 200%;
+    max-width: 402px;
+}
+
+.people-say__person-name {
+    @include poppins-font-medium(18px);
+    padding-top: 34px;
+    padding-bottom: 5px;
+}
+
+.people-say__person-details {
+    @include poppins-font-semibold(14px);
+}
+
+.pagination{
+    margin-left: 114px;
+}
+
+.pagination-icon{
+    display: block;
+}
+.pagination-up {
+    margin-bottom: 57px;
 }
 
 .sponsors {

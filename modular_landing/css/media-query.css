@@ -31,21 +31,8 @@
 }
 
 @media screen and (max-width: 1270px) {
-  .people-say {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 50px;
-  }
   .people-say__category-title, .people-say__category-description {
     text-align: center !important;
-  }
-  .people-say__text-wrapper {
-    margin-bottom: 50px;
   }
 }
 
@@ -69,12 +56,24 @@
   .destinations-list__item {
     margin-bottom: 40px;
   }
-  .book-trip {
+  .book-trip, .people-say {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-position: bottom right;
+  }
+  .maxi-popup {
+    margin-top: 50px;
+  }
+  .people-say {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .people-say__js-window-wrapper {
+    margin: 0 auto;
+    padding-left: 47px;
+    margin-top: 64px;
   }
   .book-trip__category-description, .book-trip__category-title {
     text-align: center !important;
@@ -230,12 +229,6 @@
 }
 
 @media screen and (max-width: 860px) {
-  .people-say__js-popup-wrapper::after {
-    right: 10%;
-  }
-  .people-say__js-image-wrapper::after {
-    right: -10%;
-  }
   .subscribe-wrapper {
     margin-left: 0;
     margin-right: 0;
@@ -246,6 +239,9 @@
   .destinations-list__item {
     margin-right: 10px;
     margin-left: 10px;
+  }
+  .pagination {
+    margin-left: 80px;
   }
 }
 
@@ -259,30 +255,21 @@
   .title-decoration::after {
     display: none;
   }
-  .book-trip__popup-wrapper::after {
-    right: -10%;
-    bottom: -25%;
+  .mini-popup {
+    bottom: -100px;
+    right: 50px;
   }
-  .people-say__js-popup {
-    width: 80%;
+  .people-say__js-cards {
+    margin-right: 5px;
   }
-  .people-say__js-image-wrapper::after, .people-say__js-popup-wrapper::after {
+  .people-say__js-card-wrapper:not(:first-child) {
+    margin: -155px 0 0;
+  }
+  .pagination {
     display: none;
-  }
-  .people-say__js-popup-wrapper {
-    text-align: center;
-  }
-  .people-say__js-popup-wrapper::after {
-    left: 10%;
   }
   .subscribe-wrapper {
     margin-right: 5%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .book-trip__popup-wrapper::after {
-    right: 0;
   }
 }
 /*# sourceMappingURL=media-query.css.map */

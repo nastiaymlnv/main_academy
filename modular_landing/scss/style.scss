@@ -4,9 +4,13 @@ $main-title-color: #181E4B;
 $text-color: #5E6282;
 $text-heading-color: #1E1D4C;
 $btn-text-color: #fff;
+$bg-color-white: #fff;
+$popup-text-color: #84829A;
+$progress-bar-color: #8A79DF;
 $btn-hero-color: #F1A501;
 $play-demo-color: #686D77;
 $circle-color: #E5E5E5;
+$options-icon-color: #F5F5F5;
 $circle-hover-color: #39425D;
 $subscribe-bg-color: #dfd7f9;
 $footer-map-title-color: #080809;
@@ -47,6 +51,12 @@ $footer-map-title-color: #080809;
 @mixin open-sans-medium($size){
     font-family: 'Open Sans';
     font-weight: 600;
+    font-size: $size;
+}
+
+@mixin open-sans-normal($size){
+    font-family: 'Open Sans';
+    font-weight: 400;
     font-size: $size;
 }
 
