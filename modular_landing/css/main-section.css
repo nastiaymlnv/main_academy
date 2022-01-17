@@ -3,7 +3,7 @@
   font-size: 17px;
 }
 
-.best-services, .top-destinations, .subscribe, .subscribe-wrapper {
+.best-services, .subscribe, .subscribe-wrapper {
   background-repeat: no-repeat;
 }
 
@@ -28,7 +28,6 @@
 
 .btn {
   color: #fff;
-  padding: 18px 26px;
   border: none;
   border-radius: 10px;
   font-size: 18px;
@@ -131,8 +130,6 @@
 .top-destinations {
   margin: 0 auto;
   max-width: 1102px;
-  background-image: url("../img/top-destinations-decore.png");
-  background-position: right center;
 }
 
 .top-destinations__category-title {
@@ -143,6 +140,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .destinations-list__item {
@@ -152,6 +150,16 @@
   font-size: 18px;
   color: #5E6282;
   margin-right: 47.5px;
+}
+
+.destinations-list__item:nth-child(3)::after {
+  content: url("../img/top-destinations-decore.png");
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -20%;
+  z-index: -1;
 }
 
 .destinations-list__image {
@@ -669,7 +677,6 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#FF946D), to(#FF7D68));
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
   margin-left: 24px;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding: 23px 50px;
 }
 /*# sourceMappingURL=main-section.css.map */

@@ -1,5 +1,9 @@
 @import 'style.scss';
 
+*{
+    outline: 1px solid red;
+}
+
 @media screen and (max-width: 1270px) {
     .people-say__category-title, .people-say__category-description{
         text-align: center !important;
@@ -42,6 +46,14 @@
         margin-top: 64px;
     }
 
+    .subscribe-form__input{
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form__label{
+        top: calc(25px + 9px);
+    }
+
     .book-trip__category-description, .book-trip__category-title{
         text-align: center !important;
     }
@@ -57,12 +69,8 @@
         background-position: right center;
     }
 
-    .subscribe-form__input{
-        margin-bottom: 20px;
-    }
-
-    .subscribe-form__label{
-        top: calc(25px + 9px);
+    .top-destinations{
+        background-position: right top;
     }
 }
 
@@ -211,8 +219,17 @@
 
 @media screen and (max-width: 760px){
     .destinations-list__item{
-        margin-right: 10px;
-        margin-left: 10px;
+        &:nth-child(2)::after{
+            content: url('../img/top-destinations-decore.png');
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -20%;
+            z-index: -1;
+        }
+        &:nth-child(3)::after{
+            content: '';
+        }
     }
 
     .pagination{
@@ -254,4 +271,22 @@
         margin-right: 5%;
     }
 
+}
+
+@media screen and (max-width: 480px){
+    .destinations-list__item{
+        margin-right: 0;
+    }
+
+    .destinations-list__item{
+        &:nth-child(2)::after{
+            content: '';
+        }
+    }
+
+    .maxi-popup{
+        &::after{
+            display: none;
+        }
+    }
 }

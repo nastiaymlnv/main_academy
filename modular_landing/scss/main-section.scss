@@ -82,9 +82,6 @@
 .top-destinations {
     margin: 0 auto;
     max-width: 1102px;
-    background-image: url('../img/top-destinations-decore.png');
-    @extend %bg-prop;
-    background-position: right center;
 }
 
 .top-destinations__category-title {
@@ -93,6 +90,8 @@
 
 .destinations-list {
     display: flex;
+    position: relative;
+
 }
 
 .destinations-list__item {
@@ -100,6 +99,14 @@
     @include poppins-font-semibold(18px);
     color: $text-color;
     margin-right: 47.5px;
+    &:nth-child(3)::after{
+        content: url('../img/top-destinations-decore.png');
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20%;
+        z-index: -1;
+    }
 }
 
 .destinations-list__image {
@@ -548,7 +555,5 @@
 .subscribe-form__btn {
     background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
     margin-left: 24px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding: 23px 50px;
 }
-

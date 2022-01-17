@@ -28,7 +28,6 @@
 
 .btn {
   color: #fff;
-  padding: 18px 26px;
   border: none;
   border-radius: 10px;
   font-size: 18px;
@@ -175,6 +174,7 @@
 
 .hero-interactive-elements__btn {
   background-color: #F1A501;
+  padding: 18px 26px;
   margin-right: 44px;
   -webkit-box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
           box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
