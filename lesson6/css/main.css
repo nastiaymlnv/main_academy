@@ -121,6 +121,19 @@
     flex-direction: row;
     align-items: center;
     margin: 0 77px 77px 0;
+    transition: background-color .5s;
+}
+
+.more-about-places__item:hover{
+    background-color: rgba(16, 39, 70, .2);
+}
+
+.more-about-places__img{
+    transition: transform .5s;
+}
+
+.more-about-places__item:hover .more-about-places__img{
+    transform: scale(0.95);
 }
 
 .more-about-places__item:last-child{
@@ -248,6 +261,8 @@
 }
 
 .video{
+    max-width: 1476px;
+    margin: 0 auto;
     margin-bottom: -2px;
 }
 

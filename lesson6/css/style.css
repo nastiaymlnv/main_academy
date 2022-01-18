@@ -4,7 +4,7 @@
     --link-color: #006DFE;
     --button-color: #1B7DFF;
     --section-title-color: #102746;
-    --input-border-color: #BFC0C5;
+    : #BFC0C5;
     --footer-color: #0E1D28;
     --font-size-standart: 16px;
     --font-size-m: 18px;
@@ -18,6 +18,7 @@ html {
     font-family: Lato, Roboto, sans-serif;
     font-size: var(--font-size-standart);
     background-color: var(--bg-color);
+    scroll-behavior: smooth;
 }
 
 #hamburger-menu__toggle{

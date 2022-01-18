@@ -2,8 +2,8 @@
 
 @media screen and (max-width: 1288px) {
     .trip-places__item{
-        margin-right: 3px;
-        margin-left: 3px;
+        margin-right: 6px;
+        margin-top: 6px;
     }
 }
 
@@ -217,6 +217,10 @@
         margin-right: 0;
     }
 
+    .trip-places__img{
+        width: 100%;
+    }
+
     .trips__title-wrapper {
         flex-direction: column;
         align-items: flex-start;
@@ -227,7 +231,7 @@
     }
 
     .trip-places__item {
-        width: 60%;
+        width: 100%;
         margin-right: 0;
     }
 
@@ -261,10 +265,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    .trip-places__item {
-        width: 90%;
-    }
-
     .media-content{
         padding-right: 10px;
     }
