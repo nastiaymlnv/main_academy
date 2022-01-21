@@ -29,10 +29,6 @@
   font-size: 18px;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 @media screen and (max-width: 1270px) {
   .people-say__category-title, .people-say__category-description {
     text-align: center !important;
@@ -77,6 +73,9 @@
     margin: 0 auto;
     padding-left: 47px;
     margin-top: 64px;
+  }
+  .people-say__circles-wrapper {
+    text-align: center;
   }
   .subscribe-form__input {
     margin-bottom: 20px;
@@ -129,7 +128,7 @@
     z-index: 1;
     margin-right: 20px;
     margin-top: 3px;
-    z-index: 2;
+    z-index: 3;
   }
   .hamburger-menu__icon,
   .hamburger-menu__icon::before,
@@ -167,7 +166,7 @@
             align-items: flex-end;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    z-index: 1;
+    z-index: 2;
   }
   .nav-list__item {
     margin-bottom: 10px;

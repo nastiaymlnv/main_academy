@@ -13,6 +13,11 @@
   font-size: 50px;
 }
 
+.footer-list__item-link {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
 .category-description {
   color: #5E6282;
   text-align: center;
@@ -103,6 +108,10 @@
 
 .footer-list__item-link {
   color: #5E6282;
+}
+
+.footer-list__item-link:hover {
+  color: #FFC365;
 }
 
 .social-media-list {

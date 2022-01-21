@@ -107,6 +107,9 @@
         right: -20%;
         z-index: -1;
     }
+    &:hover .destinations-list__tour-name{
+        color: $link-color;
+    }
 }
 
 .destinations-list__image {
@@ -134,6 +137,10 @@
     margin-bottom: 19px;
     display: flex;
     justify-content: space-between;
+}
+
+.destinations-list__tour-name{
+    @extend %link-hover-prop;
 }
 
 .destinations-list__trip-duration{
@@ -444,8 +451,13 @@
 .pagination-icon{
     display: block;
 }
+
 .pagination-up {
     margin-bottom: 57px;
+}
+
+.pagination-arrow-wrapper{
+    cursor: pointer;
 }
 
 .sponsors {
@@ -556,4 +568,8 @@
     background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
     margin-left: 24px;
     padding: 23px 50px;
+    opacity: 0.95;
+    &:hover{
+        opacity: 1;
+    }
 }

@@ -54,6 +54,10 @@
 
 .footer-list__item-link {
     color: $text-color;
+    @extend %link-hover-prop;
+    &:hover{
+        color: $link-color;
+    }
 }
 
 .social-media-list {

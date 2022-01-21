@@ -36,6 +36,7 @@
 .header {
   background-image: url("../img/hero-bg.png");
   background-size: cover;
+  background-position: right -200px top;
 }
 
 .hero-header {
@@ -90,16 +91,26 @@
   color: #212832;
 }
 
-.nav-list__item {
-  padding: 9px 21px;
+.nav-list__link-border {
+  display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.nav-list__item:hover:not(:last-child) {
   padding: 9px 21px;
   outline: 1px solid #212832;
   border-radius: 5px;
+}
+
+.nav-list__item:hover .nav-list__link-border {
+  outline: 1px solid #FFC365;
+}
+
+.nav-list__link {
+  -webkit-transition: color .3s, outline .3s;
+  transition: color .3s, outline .3s;
+}
+
+.nav-list__link:hover {
+  color: #FFC365;
 }
 
 .lang-switcher {
@@ -108,7 +119,6 @@
   background-color: transparent;
   color: #212832;
   cursor: pointer;
-  margin-left: 21px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -153,7 +163,7 @@
   position: absolute;
   left: -15%;
   bottom: 0;
-  z-index: -99999;
+  z-index: -1;
 }
 
 .hero-info__category-text {
@@ -178,6 +188,7 @@
   margin-right: 44px;
   -webkit-box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
           box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  opacity: 0.95;
 }
 
 .video-btn {
@@ -187,6 +198,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0.95;
+}
+
+.hero-interactive-elements__btn:hover, .video-btn:hover {
+  opacity: 1;
 }
 
 .video-btn__figure {

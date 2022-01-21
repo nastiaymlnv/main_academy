@@ -13,6 +13,11 @@
   font-size: 50px;
 }
 
+.destinations-list__tour-name {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
 .category-description {
   color: #5E6282;
   text-align: center;
@@ -160,6 +165,10 @@
           transform: translateY(-50%);
   right: -20%;
   z-index: -1;
+}
+
+.destinations-list__item:hover .destinations-list__tour-name {
+  color: #FFC365;
 }
 
 .destinations-list__image {
@@ -539,6 +548,10 @@
   margin-bottom: 57px;
 }
 
+.pagination-arrow-wrapper {
+  cursor: pointer;
+}
+
 .sponsors {
   margin: 0 auto;
   max-width: 1068px;
@@ -678,5 +691,10 @@
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
   margin-left: 24px;
   padding: 23px 50px;
+  opacity: 0.95;
+}
+
+.subscribe-form__btn:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=main-section.css.map */
