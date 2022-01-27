@@ -19,7 +19,7 @@
 
 .category-title {
   color: #181E4B;
-  text-align: center;
+  text-align: left;
 }
 
 .btn {
@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 1270px) {
   .people-say__category-title, .people-say__category-description {
-    text-align: center !important;
+    text-align: center;
   }
 }
 
@@ -80,11 +80,11 @@
   .subscribe-form__input {
     margin-bottom: 20px;
   }
-  .subscribe-form__label {
-    top: calc(25px + 9px);
+  .subscribe-form__input-icon::before {
+    top: 34px;
   }
   .book-trip__category-description, .book-trip__category-title {
-    text-align: center !important;
+    text-align: center;
   }
   .booking-list__item {
     -webkit-box-pack: center;

@@ -163,13 +163,8 @@
     align-items: center;
 }
 
-.book-trip__category-description {
-    text-align: left !important;
-}
-
 .book-trip__category-title{
     margin: 15px 0 31px;
-    text-align: left !important;
     line-height: 64.5px;
     text-transform: capitalize;
     max-width: 511px;
@@ -362,12 +357,10 @@
 }
 
 .people-say__category-description {
-    text-align: left !important;
     text-transform: uppercase;
 }
 
 .people-say__category-title {
-    text-align: left !important;
     margin-top: 8px;
     line-height: 64px;
     text-transform: capitalize;
@@ -554,7 +547,7 @@
     color: $text-color;
 }
 
-.subscribe-form__label{
+.subscribe-form__input-icon::before{
     content: url('../img/mail-icon.png');
     position: absolute;
     height: 18px;
