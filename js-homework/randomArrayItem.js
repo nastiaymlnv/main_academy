@@ -1,4 +1,4 @@
-// повернення випадкового елементу масиву
+// return a random element of the array
 
 let arr = [24, 45, 22, 35, 43];
 

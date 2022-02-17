@@ -1,4 +1,4 @@
-// видалення заданого елементу з масиву
+// remove the specified element from the array
 
 const removeItem = (arr, num) => {
     return arr.filter(item => item !== num);

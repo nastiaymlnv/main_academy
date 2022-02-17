@@ -1,15 +1,15 @@
-// сума паралельних елементів двох масивів
+// the sum of the parallel elements of the two arrays
 
 let arr1 = [1, 2, 3, 4, 5];
 let arr2 = [4, 5, 6];
 
 const sumOfArrays = (a, b) => {
-    let arrayOfSums = [];
-    const maxminArr = [];
+    const biggerArr = (a.length > b.length) ? a : b;
 
-    (a.length > b.length) ? maxminArr.push(a, b) : maxminArr.push(b, a);
-    maxminArr[0].map((item, index) => {
-        (maxminArr[1][index]) ? arrayOfSums.push(item + maxminArr[1][index]) : arrayOfSums.push(item);
+    let arrayOfSums = biggerArr.map((item, index) => {
+        if (a[index] === undefined) a[index] = 0;
+        if (b[index] === undefined) b[index] = 0;
+        return a[index] + b[index];
     })
 
     return arrayOfSums;

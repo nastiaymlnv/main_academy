@@ -1,4 +1,4 @@
-// об'єднання двух масивів без дублювання елементів
+// merge two arrays without duplicating elements
 
 let arr1 = [5, 2, 1, -10, 8];
 let arr2 = [5, 2, 1, -9, 3, 7];

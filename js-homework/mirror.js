@@ -1,3 +1,5 @@
+// rotate the array relative to the center
+
 let str = 'abba';
 let newstr = '';
 let middle, left_side, right_side;

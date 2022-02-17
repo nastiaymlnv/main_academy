@@ -1,9 +1,9 @@
-// сортування масиву по спаданню
+// sort the array in descending order
 
 let numbers = [3, 8, 7, 6, 5, -4, 3, 2, 1];
 
 const compareNumbers = (arr) => {
-    return arr.sort((a, b) => a - b);
+    return arr.sort((a, b) => b - a);
 }
 
-console.log(compareNumbers(numbers)); // -4, 1, 2, 3, 3, 5, 6, 7, 8
+console.log(compareNumbers(numbers)); // 8, 7, 6, 5, 3, 3, 2, 1, -4

@@ -1,4 +1,4 @@
-// Різниця двух масивів
+// The difference between the two arrays
 
 let arr1 = [1, 2, 'a'];
 let arr2 = [1, 2, 3, 4, 'b'];
