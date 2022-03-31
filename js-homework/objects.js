@@ -7,24 +7,22 @@
 // (если он им пренадлежит).
 
 let items = [
-    { category: ['D', 'B'], price: 25, name: "Some product1" },
-    { category: ['A'], price: 20, name: "Some product2" },
-    { category: ['C'], price: 30, name: "Some product3" },
-    { category: ['A', 'C'], price: 35, name: "Some product4" },
-    { category: ['D'], price: 5, name: "Some product5" },
-    { category: ['C'], price: 15, name: "Some product6" }
+    { category: ['Action', 'Adventure'], name: "Logan" },
+    { category: ['Fantasy'], name: "Thor" },
+    { category: ['Science fiction'], name: "Star Wars" },
+    { category: ['Adventure'], name: "The Jungle Book" },
+    { category: ['Fantasy', 'Science fiction'], name: "Black Panther" },
+    { category: ['Action'], name: "Face/Off" },
+    { category: ['Action', 'Adventure'], name: "Incredibles 2" },
+    { category: ['Science fiction'], name: "The Matrix" }
 ];
 
 let avaliableCategories = new Set();
 
 const formListOfCategories = (itemsList) => {
     for (let val of items) {
-        if (Array.isArray(val.category)){
-            for (let i of val.category) {
-                itemsList.add(i);
-            }
-        } else {
-            itemsList.add(val.category);
+        for (let i of val.category) {
+            itemsList.add(i);
         }
     }
     return itemsList;
@@ -32,9 +30,9 @@ const formListOfCategories = (itemsList) => {
 
 let namesList = Array.from(formListOfCategories(avaliableCategories));
 
-// console.log(`For prompt: ${Array.from(list)}`);
+// console.log(`For prompt: ${namesList}`);
 // console.log(namesList);
-let category = 'A';
+let category = 'Action';
 
 const filterItems = (category) => {
     return items.filter(key => String(key.category).includes(category));
@@ -45,20 +43,29 @@ const filterItems = (category) => {
 const groupByCategory = (itemsList) => {
     let groupedList = {};
     for (let categoryName of namesList) {
-        for (goods of itemsList) {
-            for (let value of goods.category) {
-                if (value === categoryName) {
-                    if (goods.category in groupedList) {
-                        groupedList[categoryName].push([goods.name, goods.price]);
+        for (let goods of itemsList) {
+            if (goods.category.length > 1) {
+                for (let name of goods.category) {
+                    if (categoryName === name) {
+                        if (name in groupedList) {
+                            groupedList[name].push(goods.name);
+                        } else {
+                            groupedList[name] = [goods.name];
+                        }
                     }
-                    else {
-                        groupedList[categoryName] = [[goods.name, goods.price]];
+                }
+            }
+            else {
+                if (categoryName === goods.category[0]) {
+                    if (goods.category[0] in groupedList) {
+                        groupedList[goods.category[0]].push(goods.name);
+                    } else {
+                        groupedList[goods.category[0]] = [goods.name];
                     }
                 }
             }
         }
     }
-
     return groupedList;
 }
 

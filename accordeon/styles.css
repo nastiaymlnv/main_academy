@@ -1,0 +1,20 @@
+.list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navigation {
+    display: flex;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.btn, .avaliableOptions {
+    padding: 10px;
+}
+
+.btn:focus, .avaliableOptions:focus {
+    border: 2px solid black;
+}
