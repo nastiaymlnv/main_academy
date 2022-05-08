@@ -7,9 +7,9 @@
 //         .catch(error => console.error('Start server'));
 // }
 
-const func1 = async () => {
+const getData = async () => {
     try {
-        const response = await fetch('/data.json');
+        const response = await fetch('server/data.json');
         const result = await response.json();
         mainFunc(result);
     } catch (error) {
@@ -17,10 +17,11 @@ const func1 = async () => {
     }
 }
 
-func1();
+getData();
 
-const mainFunc = (items) => {
+const mainFunc = (list) => {
     let avaliableCategories = new Set();
+    let items = list.films;
 
     const formListOfCategories = (itemsList) => {
         for (let val of items) {
@@ -124,16 +125,6 @@ const mainFunc = (items) => {
             if (e.target.nodeName !== "IMG") { return ;}
             let conditionsArr = [];
 
-            for (let i of document.querySelector(".display").children) {
-                if (i.nodeName !== "UL") { continue; }
-                if (i.firstChild.children[0].matches('.hideContentArrow')) {
-                    conditionsArr.push('open');
-                }
-                else if (i.firstChild.children[0].matches('.showContentArrow')) {
-                    conditionsArr.push('close');
-                }
-            }
-
             const toggleCategoriesCondition = (oldVal, newVal) => {
                 for (let ul of document.querySelector(".display").children) {
                     if (ul.nodeName !== "UL") { continue; }
@@ -148,12 +139,16 @@ const mainFunc = (items) => {
                     }
                 }
             }
-            //MODIFY HERE
-            if (conditionsArr.every((item) => item === 'open')) {
-                toggleCategoriesCondition('hideContentArrow', 'showContentArrow');
+
+            for (i of document.querySelector(".display").children) {
+                if (i.nodeName !== "UL") { continue; }
+                conditionsArr.push(i.firstChild.children[0].classList[1]);
             }
-            else if (conditionsArr.every((item) => item === 'close')) {
-                toggleCategoriesCondition('showContentArrow', 'hideContentArrow');
+
+            // console.log(conditionsArr);
+
+            if (conditionsArr.every((item) => item === 'hideContentArrow')) {
+                toggleCategoriesCondition('hideContentArrow', 'showContentArrow');
             }
             else {
                 toggleCategoriesCondition('showContentArrow', 'hideContentArrow');
@@ -190,7 +185,7 @@ const mainFunc = (items) => {
                 let targetElem = e.target.closest('ul');
                 let items = targetElem.children;
                 let nameList = targetElem.firstChild.firstElementChild;
-                console.log(targetElem.firstChild.children);
+                // console.log(targetElem.firstChild.children);
 
                 for (let i = 1; i < items.length; i++){
                     //MODIFY HERE
@@ -202,8 +197,6 @@ const mainFunc = (items) => {
             });
         }
     }
-
-    document.querySelector('.btn').addEventListener('click', categoriesList);
 
     const chooseCategory = (e) => {
         const filterItems = (category) => {
@@ -229,4 +222,61 @@ const mainFunc = (items) => {
         displayCategory(category);
     }
 
+    document.querySelector('.group-list').addEventListener('click', categoriesList);
+    document.querySelector('.avaliableOptions').addEventListener('change', chooseCategory);
+
 }
+
+// Form is for adding a new film
+
+let navButtons = document.querySelectorAll(".btn");
+
+const showPopup = () => {
+    document.querySelector('.new-item__popup').classList.add('show-popup');
+    document.querySelector('.popup-bg').classList.add('show-popup-bg');
+    document.body.style.overflowY = 'hidden';
+    document.querySelector(".avaliableOptions").disabled = true;
+    for (let i of navButtons) {
+        i.disabled = true;
+    }
+}
+
+const hidePopup = () => {
+    document.querySelector('.new-item__popup').classList.remove('show-popup');
+    document.querySelector('.popup-bg').classList.remove('show-popup-bg');
+    document.body.style.overflowY = '';
+    document.querySelector(".avaliableOptions").disabled = false;
+    for (let i of navButtons) {
+        i.disabled = false;
+    }
+}
+
+document.querySelector('.add-new-item').addEventListener('click', showPopup);
+document.querySelector('.cancel-btn').addEventListener('click', hidePopup);
+
+let form = document.querySelector('.new-item-form');
+
+const addNewFilm = (filmName, genre) => {
+    let newFilm = {category: filmName, name: genre};
+
+    fetch('http://localhost:3000/films', {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newFilm)
+    })
+}
+
+form.onsubmit = () => {
+    let values = form.elements;
+    let filmName = values[0].value;
+    let filmGenre = values[1].value;
+
+    if (filmName == '' || filmGenre == '') return false;
+
+    addNewFilm(filmName, filmGenre);
+    form.reset();
+    hidePopup();
+    return false;
+};
