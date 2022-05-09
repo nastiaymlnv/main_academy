@@ -257,7 +257,7 @@ document.querySelector('.cancel-btn').addEventListener('click', hidePopup);
 let form = document.querySelector('.new-item-form');
 
 const addNewFilm = (filmName, genre) => {
-    let newFilm = {category: filmName, name: genre};
+    let newFilm = {id: Math.round(Math.random() * (1000 - 9)) + 9, category: filmName, name: genre};
 
     fetch('http://localhost:3000/films', {
         method: "POST",
