@@ -84,6 +84,5 @@ form.onsubmit = () => {
     });
 
     alert('Success!');
-
     return false;
 };
