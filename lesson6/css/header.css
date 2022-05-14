@@ -1,3 +1,5 @@
+@import url('style.css');
+
 .header-content{
     max-width: 1060px;
     margin: 0 auto;
@@ -34,29 +36,25 @@
     justify-content: space-between;
 }
 
-/* .nav-list__item {
-} */
-
 .nav-list__link {
-    color: #fff;
-    font-size: 18px;
+    color: var(--text-color);
+    font-size: var(--font-size-m);
 }
 
 .header-title{
-    color: #fff;
+    color: var(--text-color);
     padding-bottom: 372px;
 }
 
 .header-title__title{
     max-width: 620px;
-    font-size: 50px;
+    font-size: var(--font-size-3xl);
     font-weight: 700;
     line-height: 60px;
 }
 
 .header-title__description{
     max-width: 545px;
-    font-size: 16px;
     line-height: 24px;
     padding: 20px 0 60px 0;
 }
@@ -70,15 +68,15 @@
     box-sizing: border-box;
     background-color: transparent;
     border: none;
-    font-size: 18px;
-    border-bottom: 2px solid #BFC0C5;
-    color: #fff;
+    font-size: var(--font-size-m);
+    border-bottom: 2px solid var(--input-border-color);
+    color: var(--text-color);
     padding: 0 40px 22px 40px;
     margin-right: 60px;
 }
 
 ::placeholder{
-    color: #fff;
+    color: var(--text-color);
 }
 
 .header-form__input-wrapper{
@@ -93,12 +91,12 @@
     width: 20px;
     top: 0;
     left: 0;
-    border: 2px solid #fff;
+    border: 2px solid var(--text-color);
     border-radius: 50%;
     box-sizing: border-box;
 }
 
 .header-form__submit-button {
     padding: 15px 40px;
-    font-size: 24px;
+    font-size: var(--font-size-lq);
 }

@@ -4,33 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odigo</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header media-content">
         <section class="header-content header-hero">
             <div class="header-hero__logo-wrapper">
-                <img class='header-hero__logo' src="./img/logo.svg" alt="odigo logo">
+                <a href="index.html">
+                    <img class='header-hero__logo' src="./img/logo.svg" alt="odigo logo">
+                </a>
             </div>
-            <nav class="nav">
+            <nav class="nav hamburger-menu">
+                <input id="hamburger-menu__toggle" class="hamburger-menu__toggle" type="checkbox" />
+                <label class="hamburger-menu__btn" for="hamburger-menu__toggle">
+                    <span class="hamburger-menu__space"></span>
+                </label>
                 <ul class='nav-list'>
                     <li class='nav-list__item'>
-                        <a href="#articles" class='nav-list__link'>Articles</a>
+                        <a href="#articles" class='nav-list__link link-hover'>Articles</a>
                     </li>
                     <li class='nav-list__item'>
-                        <a href="#locations" class='nav-list__link'>Locations</a>
+                        <a href="#locations" class='nav-list__link link-hover'>Locations</a>
                     </li>
                     <li class='nav-list__item'>
-                        <a href="#videos" class='nav-list__link'>Videos</a>
+                        <a href="#videos" class='nav-list__link link-hover'>Videos</a>
                     </li>
                     <li class='nav-list__item'>
-                        <a href="#" class='nav-list__link'>Sign in</a>
+                        <a href="#" class='nav-list__link link-hover'>Sign in</a>
                     </li>
                 </ul>
             </nav>
@@ -56,7 +63,7 @@
         </section>
     </header>
     <main>
-        <section class="content benefits">
+        <section class="content media-content benefits">
             <h1 class="section-title benefits__title">
                 Benefits of Odigo
             </h1>
@@ -72,10 +79,8 @@
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                     </p>
                     <div class="link-wrapper benefits-categories__more-wrapper">
-                        <div class="link">
-                            Learn more
-                        </div>
-                            <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
+                        <a href="#" class="link">Learn more</a>
+                        <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
                     </div>
                 </li>
                 <li class="benefits-categories__item">
@@ -89,10 +94,8 @@
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                     </p>
                     <div class="link-wrapper benefits-categories__more-wrapper">
-                        <div class="link benefits-categories__more">
-                            Learn more
-                        </div>
-                            <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
+                        <a href="#" class="link">Learn more</a>
+                        <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
                     </div>
                 </li>
                 <li class="benefits-categories__item">
@@ -106,68 +109,69 @@
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                     </p>
                     <div class="link-wrapper benefits-categories__more-wrapper">
-                        <div class="link benefits-categories__more">
-                            Learn more
-                        </div>
-                            <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
+                        <a href="#" class="link">Learn more</a>
+                        <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
                     </div>
                 </li>
             </ul>
         </section>
-        <section id="articles" class="content trips">
+        <section id="articles" class="content media-content trips">
             <div class="trips__title-wrapper">
                 <div class="trips__title-name__wrapper">
-                    <h1 class="section-title trips__title-name">
+                    <h1 class="section-title section-title-line trips__title-name">
                         Get inspired for your next trip
                     </h1>
-                    <hr class="section-title-bottom-line">
                 </div>
                 <div class="link-wrapper trips__link-wrapper">
-                    <div class="link trips__view-all">
-                        View all
-                    </div>
-                    <div class="link-arrow-wrapper">
-                        <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
-                    </div>
+                    <a href="#" class="link">View all</a>
+                    <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
                 </div>
             </div>
             <ul class="trip-places">
                 <li class="trip-places__item">
-                    <img class="trip-places__img" src="./img/trips-mounts.png" alt="fuji">
-                    <h2 class="trip-places__name">
-                        Mount Fuji
-                    </h2>
+                    <div class="trip-places__item-wrapper">
+                        <img class="trip-places__img" src="./img/trips-mounts.png" alt="fuji">
+                        <h2 class="trip-places__name">
+                            Mount Fuji
+                        </h2>
+                    </div>
                 </li>
                 <li class="trip-places__item">
-                    <img class="trip-places__img" src="./img/trips-kyoto.png" alt="kyoto">
-                    <h2 class="trip-places__name">
-                        Kyoto
-                    </h2>
+                    <div class="trip-places__item-wrapper">
+                        <img class="trip-places__img" src="./img/trips-kyoto.png" alt="kyoto">
+                        <h2 class="trip-places__name">
+                            Kyoto
+                        </h2>
+                    </div>
                 </li>
                 <li class="trip-places__item">
-                    <img class="trip-places__img" src="./img/trips-tokyo.png" alt="tokyo">
-                    <h2 class="trip-places__name">
-                        Tokyo
-                    </h2>
+                    <div class="trip-places__item-wrapper">
+                        <img class="trip-places__img" src="./img/trips-tokyo.png" alt="tokyo">
+                        <h2 class="trip-places__name">
+                            Tokyo
+                        </h2>
+                    </div>
                 </li>
                 <li class="trip-places__item">
-                    <img class="trip-places__img" src="./img/trips-niigata.png" alt="niigata">
-                    <h2 class="trip-places__name">
-                        Niigata
-                    </h2>
+                    <div class="trip-places__item-wrapper">
+                        <img class="trip-places__img" src="./img/trips-niigata.png" alt="niigata">
+                        <h2 class="trip-places__name">
+                            Niigata
+                        </h2>
+                    </div>
                 </li>
                 <li class="trip-places__item">
-                    <img class="trip-places__img" src="./img/trips-sapporo.png" alt="sapporo">
-                    <h2 class="trip-places__name">
-                        Sapporo
-                    </h2>
+                    <div class="trip-places__item-wrapper">
+                        <img class="trip-places__img" src="./img/trips-sapporo.png" alt="sapporo">
+                        <h2 class="trip-places__name">
+                            Sapporo
+                        </h2>
+                    </div>
                 </li>
             </ul>
             <ul class="more-about-places">
                 <li class="more-about-places__item">
-                    <div class="more-about-places__img-wrapper">
-                        <img src="./img/trips-tottori-detalized.png" alt="Tottori" class="more-about-places__img">
-                    </div>
+                    <img src="./img/trips-tottori-detalized.png" alt="Tottori" class="more-about-places__img">
                     <div class="more-about-places__info">
                         <h2 class="more-about-places__title">
                             Prefecture in Focus: Tottori
@@ -176,19 +180,13 @@
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door.
                         </p>
                         <div class="link-wrapper">
-                            <div class="link">
-                                View prefecture
-                            </div>
-                            <div class="link-arrow-wrapper">
-                                <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
-                            </div>
+                            <a href="#" class="link">View prefecture</a>
+                            <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
                         </div>
                     </div>
                 </li>
                 <li class="more-about-places__item">
-                    <div class="more-about-places__img-wrapper">
-                        <img src="./img/trips-arashiyama-detalized.png" alt="Tottori" class="more-about-places__img">
-                    </div>
+                    <img src="./img/trips-arashiyama-detalized.png" alt="Tottori" class="more-about-places__img">
                     <div class="more-about-places__info">
                         <h2 class="more-about-places__title">
                             Featured Neighborhood: Kyoto’s Arashiyama
@@ -197,22 +195,17 @@
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door.
                         </p>
                         <div class="link-wrapper">
-                            <div class="link">
-                                View neighborhood
-                            </div>
-                            <div class="link-arrow-wrapper">
-                                <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
-                            </div>
+                            <a href="#" class="link">View neighborhood</a>
+                            <img class="link-arrow" src="./img/arrow-right.svg" alt="arrow">
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
-        <section id="locations" class="content top-places">
-            <h1 class="section-title top-places__title">
+        <section id="locations" class="content media-content top-places">
+            <h1 class="section-title section-title-line top-places__title">
                 Today top places to visit
             </h1>
-            <hr class="section-title-bottom-line">
             <ul class="top-places-feed">
                 <li class="top-places-feed__item">
                     <div class="top-places-feed__item-wrapper">
@@ -240,9 +233,9 @@
                     <p class="top-places-feed__description">
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
                     </p>
-                    <div class="button top-places-feed__more-button">
+                    <a href="#" class="button top-places-feed__more-button">
                         See more
-                    </div>
+                    </a>
                 </li>
                 <li class="top-places-feed__item">
                     <div class="top-places-feed__item-wrapper">
@@ -270,9 +263,9 @@
                     <p class="top-places-feed__description">
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
                     </p>
-                    <div class="button top-places-feed__more-button">
+                    <a href="#" class="button top-places-feed__more-button">
                         See more
-                    </div>
+                    </a>
                 </li>
                 <li class="top-places-feed__item">
                     <div class="top-places-feed__item-wrapper">
@@ -300,9 +293,9 @@
                     <p class="top-places-feed__description">
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
                     </p>
-                    <div class="button top-places-feed__more-button">
+                    <a href="#" class="button top-places-feed__more-button">
                         See more
-                    </div>
+                    </a>
                 </li>
                 <li class="top-places-feed__item">
                     <div class="top-places-feed__item-wrapper">
@@ -330,9 +323,9 @@
                     <p class="top-places-feed__description">
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
                     </p>
-                    <div class="button top-places-feed__more-button">
+                    <a href="#" class="button top-places-feed__more-button">
                         See more
-                    </div>
+                    </a>
                 </li>
                 <li class="top-places-feed__item">
                     <div class="top-places-feed__item-wrapper">
@@ -360,9 +353,9 @@
                     <p class="top-places-feed__description">
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
                     </p>
-                    <div class="button top-places-feed__more-button">
+                    <a href="#" class="button top-places-feed__more-button">
                         See more
-                    </div>
+                    </a>
                 </li>
                 <li class="top-places-feed__item">
                     <div class="top-places-feed__item-wrapper">
@@ -390,42 +383,77 @@
                     <p class="top-places-feed__description">
                         Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
                     </p>
-                    <div class="button top-places-feed__more-button">
+                    <a href="#" class="button top-places-feed__more-button">
                         See more
-                    </div>
+                    </a>
                 </li>
             </ul>
         </section>
         <section id="videos" class="video">
-            <img src="./img/Video.png" alt="" class="video__screen">
+            <video class="video__screen" width="100%" poster="./img/Video.png" controls>
+                <source src="./video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer media-content">
         <div class="footer-content">
             <div class="footer__logo-wrapper">
-                <img src="./img/logo.svg" alt="odigo logo" class="footer__logo">
+                <a href="index.html">
+                    <img src="./img/logo.svg" alt="odigo logo" class="footer__logo">
+                </a>
             </div>
             <section class="footer-map">
                 <ul class="footer-map__list">
-                    <li class="footer-map__item">Company</li>
-                    <li class="footer-map__item">About</li>
-                    <li class="footer-map__item">Team</li>
-                    <li class="footer-map__item">Careers</li>
-                    <li class="footer-map__item">Privacy Policy</li>
+                    <li class="footer-map__item">
+                        Company
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">About</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Team</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Careers</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Privacy Policy</a>
+                    </li>
                 </ul>
                 <ul class="footer-map__list">
-                    <li class="footer-map__item">Locations</li>
-                    <li class="footer-map__item">Tokyo</li>
-                    <li class="footer-map__item">Kyoto</li>
-                    <li class="footer-map__item">Osaka</li>
-                    <li class="footer-map__item">Hokkaido</li>
+                    <li class="footer-map__item">
+                        Locations
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Tokyo</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Kyoto</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Osaka</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Hokkaido</a>
+                    </li>
                 </ul>
                 <ul class="footer-map__list">
-                    <li class="footer-map__item">Social Media</li>
-                    <li class="footer-map__item">Facebook</li>
-                    <li class="footer-map__item">Twitter</li>
-                    <li class="footer-map__item">Instagram</li>
-                    <li class="footer-map__item">Youtube</li>
+                    <li class="footer-map__item">
+                        Social Media
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Facebook</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Twitter</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Instagram</a>
+                    </li>
+                    <li class="footer-map__item">
+                        <a href="#" class="footer-map__link link-hover">Youtube</a>
+                    </li>
                 </ul>
             </section>
         </div>
