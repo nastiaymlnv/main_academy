@@ -3,6 +3,8 @@
 .header{
     background-image: url('../img/hero-bg.png');
     @extend %bg-prop;
+    background-size: cover;
+    background-position: right -200px top;
 }
 
 .hero-header {
@@ -19,6 +21,10 @@
 .hero-header__logo {
     width: 115px;
     height: 34px;
+}
+
+.hamburger-menu__toggle{
+    display: none;
 }
 
 .nav {
@@ -39,15 +45,23 @@
     color: $header-color;
 }
 
-.nav-list__item{
-    padding: 9px 21px;
+.nav-list__link-border{
+    display: inline-block;
     box-sizing: border-box;
-}
-
-.nav-list__item:hover:not(:last-child){
     padding: 9px 21px;
     outline: 1px solid $header-color;
     border-radius: 5px;
+}
+
+.nav-list__item:hover .nav-list__link-border{
+    outline: 1px solid $link-color;
+}
+
+.nav-list__link{
+    transition: color .3s, outline .3s;
+    &:hover{
+        color: $link-color;
+    }
 }
 
 .lang-switcher {
@@ -57,7 +71,6 @@
     background-color: transparent;
     color: $header-color;
     cursor: pointer;
-    margin-left: 21px;
     box-sizing: border-box;
 }
 
@@ -76,11 +89,14 @@
 }
 
 .hero-info__category-description {
+    text-transform: uppercase;
     color: $hero-description-color;
+    @include poppins-font-bold(20px);
 }
 
 .hero-info__category-title {
     @extend %volkhov-font-bold;
+    color: $main-title-color;
     font-size: 84px;
     line-height: 89px;
     letter-spacing: -0.04em;
@@ -98,7 +114,7 @@
     position: absolute;
     left: -15%;
     bottom: 0;
-    z-index: -99999;
+    z-index: -1;
 }
 
 .hero-info__category-text {
@@ -113,15 +129,22 @@
     display: flex;
 }
 
-.hero-interactive-elements__btn_color {
-    background-color: $btn-hero;
+.hero-interactive-elements__btn {
+    background-color: $btn-hero-color;
+    padding: 18px 26px;
     margin-right: 44px;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    opacity: 0.95;
 }
 
 .video-btn{
     display: flex;
     align-items: center;
-    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    opacity: 0.95;
+}
+
+.hero-interactive-elements__btn:hover,  .video-btn:hover{
+    opacity: 1;
 }
 
 .video-btn__figure {
@@ -134,19 +157,18 @@
     padding: 0;
     margin-right: 21px;
     box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
-}
-
-.video-btn__figure::before {
-    content: url('../img/play-btn.svg');
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &::before {
+        content: url('../img/play-btn.svg');
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .video-btn__text{
     @include poppins-font-semibold(17px);
-    color: $play-demo;
+    color: $play-demo-color;
 }

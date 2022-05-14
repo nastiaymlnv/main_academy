@@ -1,10 +1,20 @@
 $header-color: #212832;
 $hero-description-color: #DF6951;
-$hero-title-color: #181E4B;
+$main-title-color: #181E4B;
 $text-color: #5E6282;
-$btn-text: #fff;
-$btn-hero: #F1A501;
-$play-demo: #686D77;
+$text-heading-color: #1E1D4C;
+$btn-text-color: #fff;
+$bg-color-white: #fff;
+$popup-text-color: #84829A;
+$progress-bar-color: #8A79DF;
+$btn-hero-color: #F1A501;
+$link-color: #FFC365;
+$play-demo-color: #686D77;
+$circle-color: #E5E5E5;
+$options-icon-color: #F5F5F5;
+$circle-hover-color: #39425D;
+$subscribe-bg-color: #dfd7f9;
+$footer-map-title-color: #080809;
 
 %google-sans-font {
     font-family: 'Google Sans';
@@ -21,9 +31,33 @@ $play-demo: #686D77;
     font-size: $size;
 }
 
+@mixin poppins-font-medium($size){
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: $size;
+}
+
 @mixin poppins-font-semibold($size){
     font-family: Poppins;
     font-weight: 500;
+    font-size: $size;
+}
+
+@mixin poppins-font-normal($size){
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: $size;
+}
+
+@mixin open-sans-medium($size){
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: $size;
+}
+
+@mixin open-sans-normal($size){
+    font-family: 'Open Sans';
+    font-weight: 400;
     font-size: $size;
 }
 
@@ -33,19 +67,24 @@ $play-demo: #686D77;
     font-size: 50px;
 }
 
+%link-hover-prop{
+    transition: color .3s;
+}
+
 .category-description{
-    text-transform: uppercase;
-    @include poppins-font-bold(20px);
+    color: $text-color;
+    text-align: center;
+    @include poppins-font-medium(18px);
 }
 
 .category-title{
-    color: $hero-title-color;
+    color: $main-title-color;
+    text-align: left;
     @extend %volkhov-font-bold;
 }
 
 .btn{
-    color: $btn-text;
-    padding: 18px 26px;
+    color: $btn-text-color;
     border: none;
     border-radius: 10px;
     @extend %google-sans-font;
