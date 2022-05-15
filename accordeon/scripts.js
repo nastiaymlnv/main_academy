@@ -1,3 +1,13 @@
+document.querySelector('.reset-options')
+    .addEventListener('click', () => {
+        document.location.reload();
+        localStorage.status = 'nonFiltered';
+    });
+document.querySelector('.group-list')
+    .addEventListener('click', () => localStorage.status = 'groupedByCategory');
+document.querySelector('.avaliableOptions')
+    .addEventListener('change', () => localStorage.status = 'filteredByCategory');
+
 // const func = () => {
 //     return fetch('/data.json')
 //         .then(response => response.json())
@@ -225,6 +235,13 @@ const mainFunc = (list) => {
     document.querySelector('.group-list').addEventListener('click', categoriesList);
     document.querySelector('.avaliableOptions').addEventListener('change', chooseCategory);
 
+    if (localStorage.status === 'groupedByCategory') {
+        categoriesList();
+    } else if (localStorage.status === 'filteredByCategory') {
+        //do something
+    } else {
+        nonFilteredList(items);
+    }
 }
 
 // Form is for adding a new film
@@ -257,7 +274,7 @@ document.querySelector('.cancel-btn').addEventListener('click', hidePopup);
 let form = document.querySelector('.new-item-form');
 
 const addNewFilm = (filmName, genre) => {
-    let newFilm = {id: Math.round(Math.random() * (1000 - 9)) + 9, category: filmName, name: genre};
+    let newFilm = {id: Math.round(Math.random() * (1000 - 9)) + 9, category: genre, name: [filmName]};
 
     fetch('http://localhost:3000/films', {
         method: "POST",

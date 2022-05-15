@@ -61,8 +61,8 @@
     },
     {
       "id": 791,
-      "category": "Jumanji",
-      "name": "Adventure"
+      "category": ["Adventure"],
+      "name": "Jumanji"
     }
   ]
 }
