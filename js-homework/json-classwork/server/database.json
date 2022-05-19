@@ -1,0 +1,28 @@
+{
+  "products": {
+    "id": "newProduct",
+    "name": "Apple"
+  },
+  "categories": [
+    {
+      "id": "id1",
+      "name": "Fruits"
+    },
+    {
+      "id": "id2",
+      "name": "Electronics"
+    },
+    {
+      "id": "id3",
+      "name": "Food"
+    },
+    {
+      "id": "c1",
+      "name": "Sport2"
+    },
+    {
+      "name": "Films",
+      "id": "someId"
+    }
+  ]
+}
