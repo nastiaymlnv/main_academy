@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="popup-bg">
+        <div class="navigation">
+            <button class='btn reset-options'>
+                Reset filters
+            </button>
+            <button class='btn group-list'>
+                Group by category
+            </button>
+            <form>
+                <select class="avaliableOptions">
+                    <option disabled selected>Filter by category</option>
+                </select>
+            </form>
+            <button class="btn add-new-item">
+                Add new item
+            </button>
+        </div>
+        <div class="new-item__popup">
+            <form class="new-item-form">
+                <h3 class="new-item_title">Add a new film</h3>
+                <label class="new-item_name-title"> Enter film name </label>
+                <input type="text" class="new-item_name">
+                <select class="new-item_category">
+                    <option disabled selected>Choose genre</option>
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Fantasy</option>
+                    <option>Science fiction</option>
+                    <option>Comedy</option>
+                    <option>Horror</option>
+                </select>
+                <div class="new-item-form_buttons">
+                    <button type="submit" class="new-item-btn submit-btn">Add</button>
+                    <button class="new-item-btn cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div class='display'>
+        </div>
+    </div>
+</body>
+</html>

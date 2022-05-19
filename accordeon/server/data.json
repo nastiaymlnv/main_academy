@@ -1,0 +1,68 @@
+{
+  "films": [
+    {
+      "id": "1",
+      "category": [
+        "Action",
+        "Adventure"
+      ],
+      "name": "Logan"
+    },
+    {
+      "id": "2",
+      "category": [
+        "Fantasy"
+      ],
+      "name": "Thor"
+    },
+    {
+      "id": "3",
+      "category": [
+        "Science fiction"
+      ],
+      "name": "Star Wars"
+    },
+    {
+      "id": "4",
+      "category": [
+        "Adventure"
+      ],
+      "name": "The Jungle Book"
+    },
+    {
+      "id": "5",
+      "category": [
+        "Fantasy",
+        "Science fiction"
+      ],
+      "name": "Black Panther"
+    },
+    {
+      "id": "6",
+      "category": [
+        "Action"
+      ],
+      "name": "Face/Off"
+    },
+    {
+      "id": "7",
+      "category": [
+        "Action",
+        "Adventure"
+      ],
+      "name": "Incredibles 2"
+    },
+    {
+      "id": "8",
+      "category": [
+        "Science fiction"
+      ],
+      "name": "The Matrix"
+    },
+    {
+      "id": 791,
+      "category": ["Adventure"],
+      "name": "Jumanji"
+    }
+  ]
+}

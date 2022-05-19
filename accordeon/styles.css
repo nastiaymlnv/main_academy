@@ -1,0 +1,153 @@
+body, p {
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    padding-top: 20px;
+}
+
+.btn {
+    margin: 0 10px;
+}
+
+.btn, .avaliableOptions {
+    padding: 10px;
+}
+
+.btn, .avaliableOptions {
+    position: relative;
+    z-index: 0;
+}
+
+.btn:focus, .avaliableOptions:focus {
+    border: 2px solid black;
+}
+
+.itemSearcher {
+    margin-top: 20px;
+}
+
+.itemSearcherTitle {
+    margin-bottom: 5px;
+}
+
+.itemSearcherWindow {
+    padding: 10px 5px;
+}
+
+.accordeonCondition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.toggler {
+    display: flex;
+    flex-direction: column;
+}
+
+.nonFilteredList, .categoryList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.categoryList {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.categoryList :first-child:not(.arrow){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.categoryListItem {
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.toggler, .showContentArrow, .hideContentArrow {
+    cursor: pointer;
+}
+
+.showContentArrow{
+    content: url('./img/arrow-down.svg');
+}
+
+.hideContentArrow {
+    content: url('./img/arrow-up.svg');
+}
+
+.hideItems {
+    display: none;
+}
+
+.display {
+    padding: 0 0 20px 10px;
+}
+
+.new-item__popup{
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 50px;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.show-popup-bg{
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+}
+
+.show-popup, .show-popup-bg {
+    visibility: visible;
+}
+
+.new-item-form {
+    display: flex;
+    flex-direction: column;
+}
+.new-item_title {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.new-item_name-title {
+    margin-bottom: 8px;
+}
+
+.new-item_name {
+    margin-bottom: 15px;
+}
+
+.new-item_name, .new-item_category {
+    padding: 5px 10px;
+}
+
+.new-item-form_buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.new-item-btn {
+    margin: 20px 5px;
+    padding: 5px;
+    width: 80px;
+}
